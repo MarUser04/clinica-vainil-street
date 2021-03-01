@@ -1,0 +1,153 @@
+.circle1 {
+  width: 39%;
+  height: 70%;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20%;
+  left: -15%;
+}
+
+.circle2 {
+  width: 81%;
+  height: 86%;
+  background-color: #fc141c;
+  border-radius: 50%;
+  position: absolute;
+  left: 11%;
+  top: 7.5%;
+}
+
+.home__img {
+  background-image: url("../assets/images/img1.jpg");
+  background-size: cover;
+  clip-path: circle(50% at 62% 45%);
+  width: 720px;
+  height: 720px;
+  position: absolute;
+  right: -4%;
+  top: -8%;
+}
+
+.home__logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 22%;
+}
+
+.home__menu {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: white;
+  border-radius: 11px;
+  font-family: 'Futura', 'arial', sans-serif;
+  color: #db1a23; 
+}
+
+.menu__item {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.menu__item:hover {
+  background: #56161a;
+  color: white;
+  cursor: pointer;
+}
+
+.menu__item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.menu__item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.home__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 34%;
+  left: 21%;
+}
+
+.home__title {
+  font-size: 50px;
+  font-family: 'OpenSans';
+  color: white;
+  margin: 0;
+}
+
+.home__options {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.home__option__item {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 8px;
+  text-align: center;
+  font-family: 'Futura', 'arial', sans-serif;
+  color: #db1a23; 
+}
+
+.home__option__item > i {
+  color: white;
+  font-size: 35px;
+}
+
+.home__option__item:last-child {
+  background: white;
+}
+
+
+.home__info {
+  position: absolute;
+  top: 70%;
+  left: 28%;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  background: white;
+  height: 150px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.home__info__lab, .home__info__farmacia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Futura', 'arial', sans-serif;
+  color: #db1a23; 
+ }
+ 
+.home__info__lab {
+  border-right: 3px solid red;
+}
+
+.home__info__lab__header, .home__info__farmacia__header {
+  display: flex;
+  font-size: 24px;
+}
+
+.home__info__lab__header > i, .home__info__farmacia__header  > i {
+  font-size: 24px;
+  margin-right: 20px;
+}
