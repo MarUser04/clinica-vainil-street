@@ -8,6 +8,7 @@ import { BackgroundComponent } from './components/background/background.componen
 import { SpecialtiesComponent } from './components/specialties/specialties.component';
 import { DoctorViewComponent } from './components/doctor-view/doctor-view.component';
 import { JoinUsComponent } from './components/join-us/join-us.component';
+import { InternshipComponent } from './components/internship/internship.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { JoinUsComponent } from './components/join-us/join-us.component';
     BackgroundComponent,
     SpecialtiesComponent,
     DoctorViewComponent,
-    JoinUsComponent
+    JoinUsComponent,
+    InternshipComponent
   ],
   imports: [
     BrowserModule,

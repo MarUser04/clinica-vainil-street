@@ -2,18 +2,17 @@
   <div class="container__background">
     <img [src]="backgroundColor == '#fc141c' ? '../../../assets/images/logo1.png' : '../../../assets/images/logo2.png' " alt="" class="homeLogo">
     <div class="circle1" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? 'white' : '#fc141c'}">
-      <div class="circle2" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? '#fc141c' : 'white'}"></div>
+      <div class="circle2" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? '#fc141c' : 'white', 'background-image': secondBg ? 'url(' + secondBg + ')' : none}"></div>
     </div>
     <div class="container__img" [ngStyle]="{'background-image': 'url(' + imgURL + ')'}"></div>
     <div class="container__menu">
       <div class="container__menu__nav" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? 'white' : '#fc141c', 'color': backgroundColor == '#fc141c' ? '#db1a23' : 'white'}">
-        <div class="container__menu__nav__item" routerLink="/">
-          Home
-        </div>
+        <div class="container__menu__nav__item" routerLink="/" routerLinkActive="linkBorderActive" [routerLinkActiveOptions]="{exact: true}">Home</div>
         <div class="container__menu__nav__item">Servicios</div>
         <div class="container__menu__nav__item">Nosotros</div>
-        <div class="container__menu__nav__item">Pasantias</div>
-        <div class="container__menu__nav__item" routerLink="/unete">Únete</div>
+        <div class="container__menu__nav__item" routerLink="/pasantias" routerLinkActive="linkActive">Pasantias</div>
+        <div class="container__menu__nav__item" routerLink="/unete" routerLinkActive="linkActive">Únete</div>
+
       </div>
     </div>
   </div>
