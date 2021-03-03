@@ -70,7 +70,6 @@
 .linkActive {
   background: #56161a;
   color: white;
-  border-radius: 10px;
 }
 
 .container__menu__nav__item:first-child {

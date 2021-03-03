@@ -1,0 +1,117 @@
+.pharmacyInfo {
+  position: absolute;    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+  top: 22%;
+  left: 14%;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+}
+
+.pharmacyInfo__title {
+  text-align: right;
+  border-bottom: 4px solid white;
+  border-bottom-width: 5px;
+  padding-bottom: 10px;
+  width: 55%;
+  font-size: 19px;
+}
+
+.pharmacyItem {
+  display: flex;
+  width: 50%;
+  height: 35vh;
+  background: white;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 8%;
+  left: 27%;
+}
+
+.pharmacyItem img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.pharmacyItem__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+  color: #db1a23; 
+  font-family: 'Futura', 'arial', sans-serif;
+}
+
+.pharmacyItem__info p {
+  font-size:  15px;
+}
+
+.pharmacyItem__info span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.pharmacyItem__info button {
+  width: 30%;
+  padding: 6px;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  font-style: italic;
+  background: #db1a23;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+  align-self: flex-end;
+  margin-right: 4%;
+}
+
+.pharmacyItem__info button :hover {
+  cursor: pointer;
+}
+
+
+.pharmacySearch {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+  bottom: 10%;
+  left: 2%;
+}
+
+.pharmacySearch span {
+  padding: 10px;
+  font-size: 32px;
+}
+
+.pharmacySearch input {
+  border-radius: 12px;
+  border: none;
+  height: 25px;
+  width: 200px;
+  color: #db1a23;
+  font-size: 18px;
+}
+
+.pharmacySearch button {
+  width: 40%;
+  padding: 6px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  font-style: italic;
+  background: white;
+  color: #db1a23;
+  font-family: 'Futura', 'arial', sans-serif;
+  align-self: flex-end;
+  margin-right: 4%;
+}
+
+.pharmacySearch button :hover {
+  cursor: pointer;
+}
