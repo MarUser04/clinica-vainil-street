@@ -1,0 +1,15 @@
+.Specialties{
+
+    position: absolute;
+    display: flex;
+    top: 20%;
+    left: 30%;
+    width: 30%;
+    height: 50%;
+    background-color: royalblue;
+}
+
+.Specialties__item{
+
+    background-color: red;
+}
