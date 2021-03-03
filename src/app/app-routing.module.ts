@@ -7,7 +7,8 @@ import { DoctorViewComponent } from './components/doctor-view/doctor-view.compon
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'especialidades', component: SpecialtiesComponent },
-  { path: 'doctor', component: DoctorViewComponent }
+  { path: 'doctor', component: DoctorViewComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

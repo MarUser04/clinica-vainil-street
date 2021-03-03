@@ -56,7 +56,7 @@
 
 .specialties__title > span{
 
-    font-size: 30px;
+    font-size: 18px;
     font-family: 'Futura', 'arial', sans-serif;
     font-style: bold;
     color: white;
@@ -72,7 +72,7 @@
     color:#db1a23;
     top: 78%;
     left: 2%;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Futura', 'arial', sans-serif;
     letter-spacing: 5px;
 }  

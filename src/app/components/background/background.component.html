@@ -7,7 +7,9 @@
     <div class="container__img" [ngStyle]="{'background-image': 'url(' + imgURL + ')'}"></div>
     <div class="container__menu">
       <div class="container__menu__nav" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? 'white' : '#fc141c', 'color': backgroundColor == '#fc141c' ? '#db1a23' : 'white'}">
-        <div class="container__menu__nav__item">Home</div>
+        <div class="container__menu__nav__item" routerLink="/">
+          Home
+        </div>
         <div class="container__menu__nav__item">Servicios</div>
         <div class="container__menu__nav__item">Nosotros</div>
         <div class="container__menu__nav__item">Pasantias</div>
