@@ -9,7 +9,7 @@
       <div class="container__menu__nav" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? 'white' : '#fc141c', 'color': backgroundColor == '#fc141c' ? '#db1a23' : 'white'}">
         <div class="container__menu__nav__item" routerLink="/" routerLinkActive="linkActive" [routerLinkActiveOptions]="{exact: true}">Home</div>
         <div class="container__menu__nav__item">Servicios</div>
-        <div class="container__menu__nav__item">Nosotros</div>
+        <div class="container__menu__nav__item" routerLink="/nosotros" routerLinkActive="linkActive">Nosotros</div>
         <div class="container__menu__nav__item" routerLink="/pasantias" routerLinkActive="linkActive">Pasantias</div>
         <div class="container__menu__nav__item" routerLink="/unete" routerLinkActive="linkActive">Únete</div>
 

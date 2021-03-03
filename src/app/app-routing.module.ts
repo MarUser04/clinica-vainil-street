@@ -6,6 +6,7 @@ import { DoctorViewComponent } from './components/doctor-view/doctor-view.compon
 import { JoinUsComponent } from './components/join-us/join-us.component';
 import { InternshipComponent } from './components/internship/internship.component';
 import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'unete', component: JoinUsComponent },
   { path: 'pasantias', component: InternshipComponent },
   { path: 'farmacia', component: PharmacyComponent },
+  { path: 'nosotros', component: AboutComponent },
   { path: '**', redirectTo: '' }
 ];
 
