@@ -89,3 +89,24 @@
   .joinUsForm__button:hover {
     cursor: pointer;
   }
+
+  .joinUs__slogan{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 68%;
+    left: 2%;
+    align-items: center;
+  }
+
+  .joinUs__slogan__icon{
+    font-size: 55px;
+  }
+
+  .joinUS__slogan__text{
+    font-size: 35px;
+    color:#db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+  }
