@@ -1,0 +1,80 @@
+.homeMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 34%;
+  left: 21%;
+}
+
+.homeMain__title {
+  font-size: 50px;
+  font-family: 'OpenSans';
+  color: white;
+  margin: 0;
+}
+
+.homeMain__options {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.homeMain__options__item {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 8px;
+  text-align: center;
+  font-family: 'Futura', 'arial', sans-serif;
+  color: #db1a23; 
+}
+
+.homeMain__options__item > i {
+  color: white;
+  font-size: 35px;
+}
+
+.homeMain__options__item:last-child {
+  background: white;
+}
+
+
+.homeInfo {
+  position: absolute;
+  top: 70%;
+  left: 28%;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  background: white;
+  height: 150px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.homeInfo__lab, .homeInfo__farmacia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Futura', 'arial', sans-serif;
+  color: #db1a23; 
+ }
+ 
+.homeInfo__lab {
+  border-right: 3px solid red;
+}
+
+.homeInfo__lab__header, .homeInfo__farmacia__header {
+  display: flex;
+  font-size: 24px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.homeInfo__lab__header > i, .homeInfo__farmacia__header  > i {
+  font-size: 24px;
+  margin-right: 20px;
+}
