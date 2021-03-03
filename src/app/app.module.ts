@@ -10,6 +10,7 @@ import { DoctorViewComponent } from './components/doctor-view/doctor-view.compon
 import { JoinUsComponent } from './components/join-us/join-us.component';
 import { InternshipComponent } from './components/internship/internship.component';
 import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
+import { MedicineComponent } from './components/medicine/medicine.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
     InternshipComponent,
     PharmacyComponent,
     JoinUsComponent,
-    InternshipComponent
+    InternshipComponent,
+    MedicineComponent
   ],
   imports: [
     BrowserModule,
