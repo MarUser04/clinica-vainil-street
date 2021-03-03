@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-end;
     width: 40%;
-    top: 30%;
+    top: 24%;
     left: 14%;
     color: #db1a23;
     font-family: 'Futura', 'arial', sans-serif;
@@ -94,17 +94,18 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 68%;
+    top: 61%;
     left: 2%;
     align-items: center;
   }
 
   .joinUs__slogan__icon{
     font-size: 55px;
+    color:#db1a23;
   }
 
   .joinUS__slogan__text{
-    font-size: 35px;
+    font-size: 32px;
     color:#db1a23;
     font-family: 'Futura', 'arial', sans-serif;
     letter-spacing: 5px;

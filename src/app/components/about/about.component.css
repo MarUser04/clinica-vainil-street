@@ -55,14 +55,18 @@
     position: absolute;
     width: 30%;
     top: 56%;
-    left: 28%;
+    left: 28%;   
+    height: 40%;
+    overflow: hidden;
+    overflow-y: scroll;
 } 
 
 .aboutInfo p{
     font-size: 20px;
     color: #db1a23;
     text-align: justify;
-    font-family: 'Futura', 'arial', sans-serif;
+    font-family: 'Futura', 'arial', sans-serif;    
+    padding-right: 15px;
 }    
 
 .aboutActionSelected__icon{
@@ -73,8 +77,8 @@
     align-items: center;
     color: #db1a23;
     font-family: 'Futura', 'arial', sans-serif;
-    top:72%;
-    left: 3%;
+    bottom: 5%;
+    left: 1%;
 }  
 .aboutActionSelected__icon p{
     font-size: 30px;

@@ -14,7 +14,7 @@
 
 .specialties__item{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     background-color: #fc141c;
     padding: 15px;
@@ -25,11 +25,15 @@
 .specialties__item > i{
     margin: 0px 40px;
     font-size: 40px;
-    
 }  
 
-.specialties__item > p{
+.specialties__item > i:last-child {
+    margin: 0;
+}  
 
+
+.specialties__item > p{
+    width: 55%;
     font-size: 26px;
     font-family: 'Futura', 'arial', sans-serif;
     font-style: bold;
@@ -70,27 +74,11 @@
 
     position: absolute;
     color:#db1a23;
-    top: 78%;
-    left: 2%;
+    left: 1%;
+    bottom: 7%;
     font-size: 35px;
     font-family: 'Futura', 'arial', sans-serif;
     letter-spacing: 5px;
 }  
 
 
-::-webkit-scrollbar {
-    width: 12px;
-  }
-  
- 
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  }
-   
-
-  ::-webkit-scrollbar-thumb {
-    background: gray; 
-    border-radius: 10px;
-  }
-  
