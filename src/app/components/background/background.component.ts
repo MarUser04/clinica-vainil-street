@@ -9,7 +9,7 @@ export class BackgroundComponent implements OnInit {
 
   @Input() backgroundColor: string;
   @Input() imgURL: string;
-
+  @Input() secondBg: string;
 
   constructor() { }
 

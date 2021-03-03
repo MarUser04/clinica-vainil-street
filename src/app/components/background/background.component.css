@@ -8,6 +8,9 @@
 }
 
 .circle2 {
+  background-size: cover;
+  clip-path: circle(50% at 62% 45%);
+  background-position-x: right;
   width: 81%;
   height: 86%;
   border-radius: 50%;
@@ -59,6 +62,17 @@
   cursor: pointer;
 }
 
+.linkBorderActive {
+  background: #56161a;
+  color: white;
+}
+
+.linkActive {
+  background: #56161a;
+  color: white;
+  border-radius: 10px;
+}
+
 .container__menu__nav__item:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -68,3 +82,4 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+

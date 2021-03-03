@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { SpecialtiesComponent } from './components/specialties/specialties.component';
 import { DoctorViewComponent } from './components/doctor-view/doctor-view.component';
+import { InternshipComponent } from './components/internship/internship.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DoctorViewComponent } from './components/doctor-view/doctor-view.compon
     HomeComponent,
     BackgroundComponent,
     SpecialtiesComponent,
-    DoctorViewComponent
+    DoctorViewComponent,
+    InternshipComponent
   ],
   imports: [
     BrowserModule,
