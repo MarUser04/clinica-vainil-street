@@ -62,11 +62,6 @@
   cursor: pointer;
 }
 
-.linkBorderActive {
-  background: #56161a;
-  color: white;
-}
-
 .linkActive {
   background: #56161a;
   color: white;

@@ -1,0 +1,112 @@
+.joinUs {
+    position: absolute;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    top: 30%;
+    left: 14%;
+    color: #db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+  }
+  
+  .joinUs__title {
+    text-align: right;
+    border-bottom: 4px solid #db1a23;
+    border-bottom-width: 5px;
+    padding-bottom: 10px;
+    width: 55%;
+    font-size: 19px;
+  }
+  
+ 
+  .joinUsForm {
+    position: absolute;
+    bottom: 3%;
+    left: 25%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background: #fc141c;
+    padding: 12px;
+    margin: 7px;
+    border-radius: 12px;
+    color:white; 
+    font-family: 'Futura', 'arial', sans-serif;
+  }
+  
+  .joinUsForm span {
+    font-size: 22px;
+  }
+  
+  .joinUsForm__container__input {
+    display: flex;
+    height: 7vh;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+  }
+  
+  .joinUsForm__container__input input {
+    width: 80%;
+  }
+
+  .joinUsForm__container__input select {
+    width: 80.5%;
+  }
+  
+  .joinUsForm__container__input textarea{
+    width: 80%;
+    height: 40px;
+    resize: none;
+  }
+  
+  input[type="text"], textarea, select {
+    background-color :white; 
+    color: #db1a23;
+    border: none;
+  }
+  
+  .joinUsForm__container__input__text {
+    width: 15%;
+  }
+  
+  .joinUsForm__button {
+    width: 15%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-style: italic;
+    background: white;
+    color: #db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+    align-self: flex-end;
+    margin-right: 4%;
+  }
+  
+  .joinUsForm__button:hover {
+    cursor: pointer;
+  }
+
+  .joinUs__slogan{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 68%;
+    left: 2%;
+    align-items: center;
+  }
+
+  .joinUs__slogan__icon{
+    font-size: 55px;
+  }
+
+  .joinUS__slogan__text{
+    font-size: 35px;
+    color:#db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+  }

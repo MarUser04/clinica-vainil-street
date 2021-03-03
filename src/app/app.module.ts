@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { SpecialtiesComponent } from './components/specialties/specialties.component';
 import { DoctorViewComponent } from './components/doctor-view/doctor-view.component';
+import { JoinUsComponent } from './components/join-us/join-us.component';
 import { InternshipComponent } from './components/internship/internship.component';
 import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
 
@@ -18,7 +19,9 @@ import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
     SpecialtiesComponent,
     DoctorViewComponent,
     InternshipComponent,
-    PharmacyComponent
+    PharmacyComponent,
+    JoinUsComponent,
+    InternshipComponent
   ],
   imports: [
     BrowserModule,
