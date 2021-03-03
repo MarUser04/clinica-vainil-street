@@ -1,0 +1,41 @@
+<app-background [backgroundColor]="'#fff'" [imgURL]="'../../../assets/images/medicine.jpg'" [secondBg]="'../../../assets/images/medicine2.jpg'">
+  <div class="medicineInfo">
+    <div class="medicineInfo__description">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe at ipsum ipsam sapiente assumenda iste hic officiis fugit debitis corporis est maiores molestiae rem amet dolore, nesciunt qui sed fugiat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi molestias cupiditate officia ipsa iusto, incidunt perspiciatis. Saepe nisi odio facilis nobis, aspernatur voluptatibus impedit nulla, libero quam, nesciunt praesentium.</p>
+    </div>
+  </div>
+  <div class="medicineForm">
+    <div class="medicineForm__container">
+      <div class="medicineForm__container__values">
+        <span>Unidades a comprar</span>
+        <span>3</span>
+      </div>
+      <div class="medicineForm__container__values">
+        <span>Precio por unidad</span>
+        <span>100</span>
+      </div>
+      <div class="medicineForm__container__values">
+        <span>Precio total</span>
+        <span>300</span>
+      </div>
+      <div class="medicineForm__container__input">
+        <p class="medicineForm__container__input__text">Método de pago</p>
+        <select name="payment" id="payment">
+          <option hidden selected>Seleccione un método</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="tarjeta_credito">Tarjeta de Crédito</option>
+          <option value="petros">Petros</option>
+        </select>
+      </div>
+      <div class="medicineForm__container__input">
+        <p class="medicineForm__container__input__text">Nombre</p>
+        <input type="text">
+      </div>
+      <div class="medicineForm__container__input">
+        <p class="medicineForm__container__input__text">Dirección</p>
+        <input type="text">
+      </div>
+    </div>
+    <button class="medicineForm__button">Enviar</button>
+  </div>
+</app-background>

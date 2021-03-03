@@ -11,6 +11,7 @@ import { JoinUsComponent } from './components/join-us/join-us.component';
 import { InternshipComponent } from './components/internship/internship.component';
 import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
 import { AboutComponent } from './components/about/about.component';
+import { MedicineComponent } from './components/medicine/medicine.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutComponent } from './components/about/about.component';
     PharmacyComponent,
     JoinUsComponent,
     InternshipComponent,
-    AboutComponent
+    AboutComponent,
+    MedicineComponent
   ],
   imports: [
     BrowserModule,
