@@ -70,6 +70,7 @@
   
   .joinUsForm__container__input__text {
     width: 15%;
+    margin-right: 15px;
   }
   
   .joinUsForm__button {
