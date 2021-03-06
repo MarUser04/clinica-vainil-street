@@ -1,29 +1,27 @@
 <app-background [backgroundColor]="'#FFFFFF'" [imgURL]="'../../../assets/images/About.jpg'">
 <div class="aboutOption">
-    <div class="aboutOption__icon">
-       
+    <div (click)="changeSelected('Localización', 'fas fa-map-marker-alt')" [ngClass]="currentSelection == 'Localización' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
         <i class="fas fa-map-marker-alt"></i>
         <p>Localización</p>
     </div>
-    <div class="aboutOption__icon">
+    <div (click)="changeSelected('Misión', 'fas fa-bullseye')" [ngClass]="currentSelection == 'Misión' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
         <p>Misión</p>
         <i class="fas fa-bullseye"></i>
        
     </div>
-    <div class="aboutOption__icon">
-        
+    <div (click)="changeSelected('Historia', 'fas fa-history')" [ngClass]="currentSelection == 'Historia' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
         <i class="fas fa-history"></i>
         <p>Historia</p>
     </div>
-    <div class="aboutOption__icon">
+    <div (click)="changeSelected('Objetivos', 'fas fa-dot-circle')" [ngClass]="currentSelection == 'Objetivos' ?  'aboutOption__icon__selected' : 'aboutOption__icon'">
         <p>Objetivos</p>
         <i class="fas fa-dot-circle"></i>
     </div>
-    <div class="aboutOption__icon__selected">
+    <div (click)="changeSelected('Junta Directiva', 'fas fa-user-cog')" [ngClass]="currentSelection == 'Junta Directiva' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
         <i class="fas fa-user-cog"></i>
         <p>Junta Directiva</p>
     </div>
-    <div class="aboutOption__icon">
+    <div (click)="changeSelected('Organigrama', 'fas fa-sitemap')" [ngClass]="currentSelection == 'Organigrama' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
         <p>Organigrama</p>   
         <i class="fas fa-sitemap"></i>
         </div>
@@ -34,7 +32,7 @@
 </div>
 
 <div class="aboutActionSelected__icon">
-    <i class="fas fa-user-cog"></i>
-    <p>Junta Directiva</p>
+    <i class="{{currentSelectionIcon}}"></i>
+    <p>{{currentSelection}}</p>
 </div>
 </app-background>

@@ -41,14 +41,17 @@
     background: #db1a23;
 } 
 
-.aboutOption__icon i, .aboutActionSelected__icon i{
+.aboutOption__icon i, .aboutActionSelected__icon i {
     font-size: 4vw;
     color: #db1a23; 
     border: 2px solid #db1a23; 
     border-radius: 12px;
     padding: 15px;
-    
 } 
+
+.aboutOption__icon i:hover, .aboutActionSelected__icon i:hover {
+    cursor: pointer;
+}
 
 .aboutInfo{
 
@@ -76,6 +79,7 @@
     justify-content: center;
     align-items: center;
     color: #db1a23;
+    width: 16%;
     font-family: 'Futura', 'arial', sans-serif;
     bottom: 5%;
     left: 1%;

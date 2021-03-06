@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  private currentSelection: string = 'Junta Directiva';
+  private currentSelectionIcon: string = 'fas fa-user-cog';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public changeSelected(newSelected: string, newIcon: string): void {
+    this.currentSelection = newSelected;
+    this.currentSelectionIcon = newIcon;
   }
 
 }
