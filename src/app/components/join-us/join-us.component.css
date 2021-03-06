@@ -16,7 +16,11 @@
     border-bottom-width: 5px;
     padding-bottom: 10px;
     width: 55%;
-    font-size: 19px;
+    font-size: 1.4vw;
+  }
+
+  .joinUs__info {
+    font-size: 1.2vw;
   }
   
  
@@ -28,7 +32,7 @@
     display: flex;
     flex-direction: column;
     background: #fc141c;
-    padding: 12px;
+    padding: 7px 15px;
     margin: 7px;
     border-radius: 12px;
     color:white; 
@@ -36,7 +40,7 @@
   }
   
   .joinUsForm span {
-    font-size: 22px;
+    font-size: 1.7vw;
   }
   
   .joinUsForm__container__input {
@@ -45,6 +49,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    font-size: 1.1vw;
 
   }
   
@@ -66,6 +71,7 @@
     background-color :white; 
     color: #db1a23;
     border: none;
+    font-size: 1vw;
   }
   
   .joinUsForm__container__input__text {
@@ -78,7 +84,7 @@
     padding: 6px;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-style: italic;
     background: white;
     color: #db1a23;
@@ -101,12 +107,12 @@
   }
 
   .joinUs__slogan__icon{
-    font-size: 55px;
+    font-size: 4vw;
     color:#db1a23;
   }
 
   .joinUS__slogan__text{
-    font-size: 32px;
+    font-size: 2vw;
     color:#db1a23;
     font-family: 'Futura', 'arial', sans-serif;
     letter-spacing: 5px;

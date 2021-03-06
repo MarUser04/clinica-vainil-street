@@ -9,7 +9,7 @@
 }
 
 .homeMain__title {
-  font-size: 50px;
+  font-size: 4vw;
   font-family: 'OpenSans';
   color: white;
   margin: 0;
@@ -33,13 +33,16 @@
 
 .homeMain__options__item > i {
   color: white;
-  font-size: 35px;
+  font-size: 3vw;
 }
 
 .homeMain__options__item:last-child {
   background: white;
 }
 
+.homeMain__options__item:last-child:hover {
+  cursor: pointer;
+}
 
 .homeInfo {
   position: absolute;
@@ -49,9 +52,10 @@
   width: 60%;
   justify-content: space-around;
   background: white;
-  height: 150px;
+  height: auto;
   padding: 10px;
   border-radius: 20px;
+  font-size: 1.3vw;
 }
 
 .homeInfo__lab, .homeInfo__farmacia {
@@ -69,12 +73,34 @@
 
 .homeInfo__lab__header, .homeInfo__farmacia__header {
   display: flex;
-  font-size: 24px;
+  font-size: 2vw;
   justify-content: flex-start;
   align-items: center;
 }
 
 .homeInfo__lab__header > i, .homeInfo__farmacia__header  > i {
-  font-size: 24px;
+  font-size: 1.5vw;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .homeMain {
+    top: 36%;
+    left: 25%;
+  }
+
+  .homeMain__title { 
+    font-size: 6vw;
+  }
+
+  .homeMain__options__item > i {
+    font-size: 5vw;
+  }
+
+  .homeInfo {
+    left: 15%;
+    width: 70%;
+    font-size: 1.8vw;
+  }
+
 }

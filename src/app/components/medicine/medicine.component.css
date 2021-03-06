@@ -10,6 +10,9 @@
   font-family: 'Futura', 'arial', sans-serif;
 }
 
+.medicineInfo__description {
+  font-size: 1.2vw;
+}
 
 .medicineForm {
   position: absolute;
@@ -36,6 +39,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  font-size: 1.1vw;
 }
 
 .medicineForm__container__input input {
@@ -58,6 +62,7 @@ input[type="text"], textarea,  select{
   background-color : white; 
   color: #db1a23;
   border: none;
+  font-size: 1vw;
 }
 
 .medicineForm__container__input__text {
@@ -69,7 +74,7 @@ input[type="text"], textarea,  select{
   padding: 6px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-size: 1vw;
   font-style: italic;
   font-weight: bold;
   background: white;
@@ -90,5 +95,5 @@ input[type="text"], textarea,  select{
 }
 
 .medicineForm__container__values  span {
-  font-size: 14px;
+  font-size: 1.1vw;
 }

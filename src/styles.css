@@ -18,7 +18,7 @@ body {
   src: url(assets/fonts/OpensSans/OpenSans-Italic.ttf) format("opentype");
 }
 
-.container {
+.containerMain {
   display: flex;
   position: relative;
   height: 100vh;
@@ -47,4 +47,3 @@ body {
   background: gray; 
   border-radius: 10px;
 }
-

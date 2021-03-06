@@ -24,7 +24,7 @@
 
 .specialties__item > i{
     margin: 0px 40px;
-    font-size: 40px;
+    font-size: 2.5vw;
 }  
 
 .specialties__item > i:last-child {
@@ -34,10 +34,11 @@
 
 .specialties__item > p{
     width: 55%;
-    font-size: 26px;
+    font-size: 1.4vw;
     font-family: 'Futura', 'arial', sans-serif;
     font-style: bold;
-    color: white;
+    color: white;   
+    padding-top: 4%;
 }  
 
 .specialties__title{
@@ -55,12 +56,12 @@
 
     
     margin: 0px 40px;
-    font-size: 25px;
+    font-size: 1.6vw;
 }  
 
 .specialties__title > span{
 
-    font-size: 18px;
+    font-size: 1.5vw;
     font-family: 'Futura', 'arial', sans-serif;
     font-style: bold;
     color: white;
@@ -76,7 +77,7 @@
     color:#db1a23;
     left: 1%;
     bottom: 7%;
-    font-size: 35px;
+    font-size: 1.8vw;
     font-family: 'Futura', 'arial', sans-serif;
     letter-spacing: 5px;
 }  

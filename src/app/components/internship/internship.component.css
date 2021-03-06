@@ -16,7 +16,11 @@
   border-bottom-width: 5px;
   padding-bottom: 10px;
   width: 55%;
-  font-size: 19px;
+  font-size: 1.7vw;
+}
+
+.intershipInfo__description {
+  font-size: 1.2vw;
 }
 
 
@@ -33,10 +37,11 @@
   border-radius: 12px;
   color: #db1a23; 
   font-family: 'Futura', 'arial', sans-serif;
+  font-size: 1vw;
 }
 
 .intershipForm span {
-  font-size: 22px;
+  font-size: 1.2vw;
 }
 
 .intershipForm__container__input {
@@ -46,6 +51,7 @@
   align-items: center;
   width: 100%;
 }
+
 
 .intershipForm__container__input input, select {
   width: 80%;
@@ -62,6 +68,7 @@ input[type="text"], textarea,  select{
   background-color : #db1a23; 
   color: white;
   border: none;
+  font-size: 1vw;
 }
 
 .intershipForm__container__input__text {
@@ -73,7 +80,7 @@ input[type="text"], textarea,  select{
   padding: 6px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-size: 1.2vw;
   font-style: italic;
   font-weight: bold;
   background: #db1a23;
