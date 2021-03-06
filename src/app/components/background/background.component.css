@@ -118,6 +118,22 @@
     background-image: none !important;
   }
 
+  .homeLogo {
+    top: 5%;
+    left: 37%;
+    height: 23vh;
+    width: 25vw;
+  }
+
+  .container__menu {
+    top: 28%;
+    left: 18%;
+  }
+
+  .container__menu__nav__item {
+    font-size: 2.1vw;
+  }
+
   .circle1{
     display: none;
   } 
