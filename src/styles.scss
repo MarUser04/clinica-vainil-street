@@ -5,17 +5,17 @@ body {
 
 @font-face {
   font-family: Futura;
-  src: url(assets/fonts/Futura/Futura.otf) format("opentype");
+  src: url(assets/fonts/Futura/Futura.otf) format('opentype');
 }
 
 @font-face {
   font-family: Twentieth;
-  src: url(assets/fonts/Twentieth/TCMI.ttf) format("opentype");
+  src: url(assets/fonts/Twentieth/TCMI.ttf) format('opentype');
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url(assets/fonts/OpensSans/OpenSans-Italic.ttf) format("opentype");
+  src: url(assets/fonts/OpensSans/OpenSans-Italic.ttf) format('opentype');
 }
 
 .containerMain {
@@ -36,14 +36,12 @@ body {
   width: 12px;
 }
 
-
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
 
 ::-webkit-scrollbar-thumb {
-  background: gray; 
+  background: gray;
   border-radius: 10px;
 }
