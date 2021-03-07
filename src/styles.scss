@@ -35,6 +35,7 @@ body {
 
   @media screen and (max-width: $customBreakpoint) {
     overflow-y: scroll;
+    position: relative;
   }
 }
 

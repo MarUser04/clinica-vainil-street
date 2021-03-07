@@ -74,9 +74,9 @@
   @media screen and (max-width: $customBreakpoint) {
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 10px auto;
     width: 75%;
-    top: 25%;
+    position: relative;
   }
 }
 
@@ -139,10 +139,10 @@
   @media screen and (max-width: $customBreakpoint) {
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 10px auto;
     width: 75%;
     flex-direction: column;
     font-size: 4vw;
-    top: 45%;
+    position: relative;
   }
 }

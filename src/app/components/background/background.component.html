@@ -1,14 +1,16 @@
 <div class="containerMain" [ngStyle]="{ 'background-color': backgroundColor }">
     <div class="container__background">
-        <img
-            [src]="
-                backgroundColor == '#fc141c'
-                    ? '../../../assets/images/logo1.png'
-                    : '../../../assets/images/logo2.png'
-            "
-            alt=""
-            class="homeLogo"
-        />
+        <div class="logo-container">
+            <img
+                [src]="
+                    backgroundColor == '#fc141c'
+                        ? '../../../assets/images/logo1.png'
+                        : '../../../assets/images/logo2.png'
+                "
+                alt=""
+                class="homeLogo"
+            />
+        </div>
         <div
             class="circle-1"
             [ngStyle]="{
