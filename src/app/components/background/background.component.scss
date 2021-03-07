@@ -1,3 +1,5 @@
+@import './../../../vars';
+
 .circle {
   &-1 {
     width: 39%;
@@ -22,7 +24,7 @@
 
   &-2,
   &-1 {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $customBreakpoint) {
       display: none;
     }
   }
@@ -38,7 +40,7 @@
     right: -4%;
     top: -8%;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $customBreakpoint) {
       background-image: none !important;
     }
   }
@@ -76,13 +78,13 @@
           border-bottom-right-radius: 10px;
         }
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $customBreakpoint) {
           font-size: 2.1vw;
         }
       }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $customBreakpoint) {
       top: 28%;
       left: 18%;
     }
@@ -120,11 +122,11 @@
   left: 5%;
   height: 22%;
 
-  @media screen and (max-width: 900px) {
-    top: 5%;
-    left: 37%;
-    height: 23vh;
-    width: 25vw;
+  @media screen and (max-width: $customBreakpoint) {
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
