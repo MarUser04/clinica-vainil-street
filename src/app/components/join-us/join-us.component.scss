@@ -1,0 +1,122 @@
+.joinUs {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+  top: 24%;
+  left: 14%;
+  color: #db1a23;
+  font-family: 'Futura', 'arial', sans-serif;
+
+  &__title {
+    text-align: right;
+    border-bottom: 4px solid #db1a23;
+    border-bottom-width: 5px;
+    padding-bottom: 10px;
+    width: 55%;
+    font-size: 1.4vw;
+  }
+
+  &__info {
+    font-size: 1.2vw;
+  }
+}
+
+.joinUsForm {
+  position: absolute;
+  bottom: 3%;
+  left: 25%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background: #fc141c;
+  padding: 7px 15px;
+  margin: 7px;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+
+  & span {
+    font-size: 1.7vw;
+  }
+
+  &__container__input {
+    display: flex;
+    height: 7vh;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1vw;
+
+    & input {
+      width: 80%;
+    }
+
+    & select {
+      width: 80.5%;
+    }
+
+    & textarea {
+      width: 80%;
+      height: 40px;
+      resize: none;
+    }
+
+    &__text {
+      width: 15%;
+      margin-right: 15px;
+    }
+  }
+
+  &__button {
+    width: 15%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2vw;
+    font-style: italic;
+    background: white;
+    color: #db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+    align-self: flex-end;
+    margin-right: 4%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+input[type='text'],
+textarea,
+select {
+  background-color: white;
+  color: #db1a23;
+  border: none;
+  font-size: 1vw;
+}
+
+.joinUs {
+  &__slogan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 61%;
+    left: 2%;
+    align-items: center;
+
+    &__icon {
+      font-size: 4vw;
+      color: #db1a23;
+    }
+
+    &__text {
+      font-size: 2vw;
+      color: #db1a23;
+      font-family: 'Futura', 'arial', sans-serif;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+  }
+}
