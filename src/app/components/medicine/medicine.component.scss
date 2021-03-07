@@ -1,0 +1,103 @@
+.medicineInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  top: 27%;
+  left: 8%;
+  color: #db1a23;
+  font-family: 'Futura', 'arial', sans-serif;
+
+  &__description {
+    font-size: 1.2vw;
+  }
+}
+
+.medicineForm {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background: #db1a23;
+  padding: 20px;
+  margin: 7px;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+
+  & span {
+    font-size: 22px;
+  }
+
+  &__container {
+    &__input {
+      display: flex;
+      height: 7vh;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      font-size: 1.1vw;
+
+      & input {
+        width: 80%;
+        margin-left: 8px;
+      }
+
+      & select {
+        width: 80.5%;
+        margin-left: 8px;
+      }
+
+      & textarea {
+        width: 80%;
+        height: 40px;
+        resize: none;
+      }
+
+      &__text {
+        width: 35%;
+      }
+    }
+
+    &__values {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+      & span {
+        font-size: 1.1vw;
+      }
+    }
+  }
+
+  &__button {
+    width: 15%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+    background: white;
+    color: #db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+    align-self: flex-end;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+input[type='text'],
+textarea,
+select {
+  background-color: white;
+  color: #db1a23;
+  border: none;
+  font-size: 1vw;
+}
