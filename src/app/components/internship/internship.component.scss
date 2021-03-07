@@ -29,12 +29,10 @@
   }
 
   @media screen and (max-width: $customBreakpoint) {
-    top: 30%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: static;
     width: 80%;
     align-items: center;
+    margin: 20px auto;
 
     & * {
       font-size: 4vw;
@@ -57,34 +55,33 @@
   font-family: 'Futura', 'arial', sans-serif;
   font-size: 1vw;
 
-  & span {
-    font-size: 1.2vw;
-  }
-
   &__container__input {
     display: flex;
-    height: 7vh;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
 
-    & input {
-      width: 80%;
-      margin-left: 8px;
-    }
+    @media screen and (min-width: $customBreakpoint) {
+      height: 7vh;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
 
-    & textarea {
-      width: 80%;
-      height: 40px;
-      resize: none;
-    }
+      & input {
+        width: 80%;
+        margin-left: 8px;
+      }
 
-    & p {
-      margin-bottom: 0;
-    }
+      & textarea {
+        width: 80%;
+        height: 40px;
+        resize: none;
+      }
 
-    &__text {
-      width: 15%;
+      & p {
+        margin-bottom: 0;
+      }
+
+      &__text {
+        width: 15%;
+      }
     }
 
     @media screen and (max-width: $customBreakpoint) {
@@ -113,17 +110,16 @@
     @media screen and (max-width: $customBreakpoint) {
       margin-top: 15px;
       display: block;
-      width: 90%;
+      width: 100%;
     }
   }
 
   @media screen and (max-width: $customBreakpoint) {
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: static;
+    display: block;
+    margin: 10px auto;
     width: 80%;
-    align-items: center;
+    text-align: center;
 
     & * {
       font-size: 4vw !important;
@@ -132,11 +128,9 @@
 }
 
 select {
-  width: 80%;
-  margin-left: 8px;
-
   @media screen and (min-width: $customBreakpoint) {
-    margin-left: 0;
+    width: 80%;
+    margin-left: 8px;
   }
 }
 

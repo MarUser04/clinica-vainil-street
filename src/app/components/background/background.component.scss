@@ -42,6 +42,7 @@
 
     @media screen and (max-width: $customBreakpoint) {
       background-image: none !important;
+      display: none;
     }
   }
 
