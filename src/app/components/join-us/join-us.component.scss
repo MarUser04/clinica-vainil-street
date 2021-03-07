@@ -1,3 +1,5 @@
+@import './../../../vars';
+
 .joinUs {
   position: absolute;
   display: flex;
@@ -16,10 +18,25 @@
     padding-bottom: 10px;
     width: 55%;
     font-size: 1.4vw;
+
+    @media screen and (max-width: $customBreakpoint) {
+      text-align: center;
+    }
   }
 
   &__info {
     font-size: 1.2vw;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto;
+
+    & * {
+      font-size: 4vw;
+    }
   }
 }
 
@@ -43,29 +60,36 @@
 
   &__container__input {
     display: flex;
-    height: 7vh;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    font-size: 1.1vw;
 
-    & input {
-      width: 80%;
+    @media screen and (min-width: $customBreakpoint) {
+      height: 7vh;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      font-size: 1.1vw;
+
+      & input {
+        width: 80%;
+      }
+
+      & select {
+        width: 80.5%;
+      }
+
+      & textarea {
+        width: 80%;
+        height: 40px;
+        resize: none;
+      }
+
+      &__text {
+        width: 15%;
+        margin-right: 15px;
+      }
     }
 
-    & select {
-      width: 80.5%;
-    }
-
-    & textarea {
-      width: 80%;
-      height: 40px;
-      resize: none;
-    }
-
-    &__text {
-      width: 15%;
-      margin-right: 15px;
+    @media screen and (max-width: $customBreakpoint) {
+      flex-direction: column;
     }
   }
 
@@ -84,6 +108,24 @@
 
     &:hover {
       cursor: pointer;
+    }
+
+    @media screen and (max-width: $customBreakpoint) {
+      margin-top: 15px;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+
+    & * {
+      font-size: 4vw !important;
     }
   }
 }
@@ -117,6 +159,17 @@ select {
       font-family: 'Futura', 'arial', sans-serif;
       letter-spacing: 5px;
       text-align: center;
+    }
+
+    @media screen and (max-width: $customBreakpoint) {
+      position: static;
+      width: 80%;
+      align-items: center;
+      margin: 20px auto;
+
+      & * {
+        font-size: 4vw;
+      }
     }
   }
 }
