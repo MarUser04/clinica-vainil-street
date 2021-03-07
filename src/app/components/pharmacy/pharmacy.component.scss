@@ -1,0 +1,121 @@
+.pharmacyInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+  top: 22%;
+  left: 14%;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+
+  &__title {
+    text-align: right;
+    border-bottom: 4px solid white;
+    border-bottom-width: 5px;
+    padding-bottom: 10px;
+    width: 55%;
+    font-size: 1.6vw;
+  }
+
+  &__description {
+    font-size: 1.2vw;
+  }
+}
+
+.pharmacyItem {
+  display: flex;
+  width: 50%;
+  height: 35vh;
+  background: white;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 8%;
+  left: 27%;
+
+  & img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 15px;
+    color: #db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+
+    & p {
+      font-size: 1.1vw;
+    }
+
+    & span {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.1vw;
+    }
+
+    & button {
+      width: 30%;
+      padding: 6px;
+      border-radius: 15px;
+      border: none;
+      font-size: 1.2vw;
+      font-style: italic;
+      background: #db1a23;
+      color: white;
+      font-family: 'Futura', 'arial', sans-serif;
+      align-self: flex-end;
+      margin-right: 4%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.pharmacySearch {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  font-family: 'Futura', 'arial', sans-serif;
+  bottom: 10%;
+  left: 2%;
+
+  & span {
+    padding: 10px;
+    font-size: 2vw;
+  }
+
+  & input {
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    width: 200px;
+    color: #db1a23;
+    font-size: 1.1vw;
+  }
+
+  & button {
+    width: 40%;
+    padding: 6px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    font-size: 1vw;
+    font-style: italic;
+    background: white;
+    color: #db1a23;
+    font-family: 'Futura', 'arial', sans-serif;
+    align-self: flex-end;
+    margin-right: 4%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

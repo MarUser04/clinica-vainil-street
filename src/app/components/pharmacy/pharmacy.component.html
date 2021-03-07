@@ -1,23 +1,44 @@
-<app-background [backgroundColor]="'#fc141c'" [imgURL]="'../../../assets/images/pharmacy.jpg'">
-  <div class="pharmacyInfo">
-    <div class="pharmacyInfo__title">
-      Farmacia
+<app-background
+    [backgroundColor]="'#fc141c'"
+    [imgURL]="'../../../assets/images/pharmacy.jpg'"
+>
+    <div class="pharmacyInfo">
+        <div class="pharmacyInfo__title">Farmacia</div>
+        <div class="pharmacyInfo__description">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                at ipsum ipsam sapiente assumenda iste hic officiis fugit
+                debitis corporis est maiores molestiae rem amet dolore, nesciunt
+                qui sed fugiat! Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam nisi molestias cupiditate officia ipsa
+                iusto, incidunt perspiciatis. Saepe nisi odio facilis nobis,
+                aspernatur voluptatibus impedit nulla, libero quam, nesciunt
+                praesentium.
+            </p>
+        </div>
     </div>
-    <div class="pharmacyInfo__description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe at ipsum ipsam sapiente assumenda iste hic officiis fugit debitis corporis est maiores molestiae rem amet dolore, nesciunt qui sed fugiat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi molestias cupiditate officia ipsa iusto, incidunt perspiciatis. Saepe nisi odio facilis nobis, aspernatur voluptatibus impedit nulla, libero quam, nesciunt praesentium.</p>
+
+    <div class="pharmacyItem">
+        <img src="../../../assets/images/medicine.jpg" alt="" />
+        <div class="pharmacyItem__info">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Molestias, repellat sequi. Doloribus doloremque, nihil possimus,
+                nisi nemo excepturi deserunt similique odit illum delectus cum
+                maiores qui adipisci recusandae tempore laboriosam?
+            </p>
+            <span>Unidades disponibles: XXXX</span>
+            <button routerLink="/medicina">Comprar</button>
+        </div>
     </div>
-  </div>
-  <div class="pharmacyItem">
-    <img src="../../../assets/images/medicine.jpg" alt="">
-    <div class="pharmacyItem__info">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, repellat sequi. Doloribus doloremque, nihil possimus, nisi nemo excepturi deserunt similique odit illum delectus cum maiores qui adipisci recusandae tempore laboriosam?</p>
-      <span>Unidades disponibles: XXXX</span>
-      <button routerLink="/medicina">Comprar</button>
+
+    <div class="pharmacySearch">
+        <span>
+            ¡Busca tu
+            <br />
+            medicina!
+        </span>
+        <input type="text" />
+        <button>Enviar</button>
     </div>
-  </div>
-  <div class="pharmacySearch">
-    <span>¡Busca tu <br> medicina!</span>
-    <input type="text">
-    <button>Enviar</button>
-  </div>
 </app-background>
