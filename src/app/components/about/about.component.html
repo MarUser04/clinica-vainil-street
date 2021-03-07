@@ -1,38 +1,95 @@
-<app-background [backgroundColor]="'#FFFFFF'" [imgURL]="'../../../assets/images/About.jpg'">
-<div class="aboutOption">
-    <div (click)="changeSelected('Localización', 'fas fa-map-marker-alt')" [ngClass]="currentSelection == 'Localización' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Localización</p>
-    </div>
-    <div (click)="changeSelected('Misión', 'fas fa-bullseye')" [ngClass]="currentSelection == 'Misión' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
-        <p>Misión</p>
-        <i class="fas fa-bullseye"></i>
-       
-    </div>
-    <div (click)="changeSelected('Historia', 'fas fa-history')" [ngClass]="currentSelection == 'Historia' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
-        <i class="fas fa-history"></i>
-        <p>Historia</p>
-    </div>
-    <div (click)="changeSelected('Objetivos', 'fas fa-dot-circle')" [ngClass]="currentSelection == 'Objetivos' ?  'aboutOption__icon__selected' : 'aboutOption__icon'">
-        <p>Objetivos</p>
-        <i class="fas fa-dot-circle"></i>
-    </div>
-    <div (click)="changeSelected('Junta Directiva', 'fas fa-user-cog')" [ngClass]="currentSelection == 'Junta Directiva' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
-        <i class="fas fa-user-cog"></i>
-        <p>Junta Directiva</p>
-    </div>
-    <div (click)="changeSelected('Organigrama', 'fas fa-sitemap')" [ngClass]="currentSelection == 'Organigrama' ? 'aboutOption__icon__selected' : 'aboutOption__icon'">
-        <p>Organigrama</p>   
-        <i class="fas fa-sitemap"></i>
+<app-background
+    [backgroundColor]="'#FFFFFF'"
+    [imgURL]="'../../../assets/images/About.jpg'"
+>
+    <div class="aboutOption">
+        <div
+            (click)="changeSelected('Localización', 'fas fa-map-marker-alt')"
+            [ngClass]="
+                currentSelection == 'Localización'
+                    ? 'aboutOption__icon--selected'
+                    : 'aboutOption__icon'
+            "
+        >
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Localización</p>
         </div>
-</div>
+        <div
+            (click)="changeSelected('Misión', 'fas fa-bullseye')"
+            [ngClass]="
+                currentSelection == 'Misión'
+                    ? 'aboutOption__icon--selected'
+                    : 'aboutOption__icon'
+            "
+        >
+            <p>Misión</p>
+            <i class="fas fa-bullseye"></i>
+        </div>
+        <div
+            (click)="changeSelected('Historia', 'fas fa-history')"
+            [ngClass]="
+                currentSelection == 'Historia'
+                    ? 'aboutOption__icon--selected'
+                    : 'aboutOption__icon'
+            "
+        >
+            <i class="fas fa-history"></i>
+            <p>Historia</p>
+        </div>
 
-<div class="aboutInfo">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem architecto magnam assumenda repellendus consectetur vitae ipsam non, ad sed numquam praesentium cumque deserunt minus laborum quam quia. Quia, voluptates Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quibusdam similique ut, magnam reprehenderit ea quod quisquam hic. Consequatur mollitia deleniti id fugiat natus dolore obcaecati quod labore reprehenderit. At. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quisquam beatae! Quaerat praesentium placeat consectetur nam corrupti sapiente rem aliquid, aspernatur eveniet sed reprehenderit sit neque ducimus animi facilis maxime.</p>
-</div>
+        <div
+            (click)="changeSelected('Objetivos', 'fas fa-dot-circle')"
+            [ngClass]="
+                currentSelection == 'Objetivos'
+                    ? 'aboutOption__icon--selected'
+                    : 'aboutOption__icon'
+            "
+        >
+            <p>Objetivos</p>
+            <i class="fas fa-dot-circle"></i>
+        </div>
+        <div
+            (click)="changeSelected('Junta Directiva', 'fas fa-user-cog')"
+            [ngClass]="
+                currentSelection == 'Junta Directiva'
+                    ? 'aboutOption__icon--selected'
+                    : 'aboutOption__icon'
+            "
+        >
+            <i class="fas fa-user-cog"></i>
+            <p>Junta Directiva</p>
+        </div>
+        <div
+            (click)="changeSelected('Organigrama', 'fas fa-sitemap')"
+            [ngClass]="
+                currentSelection == 'Organigrama'
+                    ? 'aboutOption__icon--selected'
+                    : 'aboutOption__icon'
+            "
+        >
+            <p>Organigrama</p>
+            <i class="fas fa-sitemap"></i>
+        </div>
+    </div>
 
-<div class="aboutActionSelected__icon">
-    <i class="{{currentSelectionIcon}}"></i>
-    <p>{{currentSelection}}</p>
-</div>
+    <div class="aboutInfo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+            architecto magnam assumenda repellendus consectetur vitae ipsam non,
+            ad sed numquam praesentium cumque deserunt minus laborum quam quia.
+            Quia, voluptates Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Obcaecati quibusdam similique ut, magnam reprehenderit ea quod
+            quisquam hic. Consequatur mollitia deleniti id fugiat natus dolore
+            obcaecati quod labore reprehenderit. At. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Nihil, quisquam beatae! Quaerat
+            praesentium placeat consectetur nam corrupti sapiente rem aliquid,
+            aspernatur eveniet sed reprehenderit sit neque ducimus animi facilis
+            maxime.
+        </p>
+    </div>
+
+    <div class="aboutActionSelected__icon">
+        <i class="{{ currentSelectionIcon }}"></i>
+        <p>{{ currentSelection }}</p>
+    </div>
 </app-background>
