@@ -8,6 +8,7 @@ import { InternshipComponent } from './components/internship/internship.componen
 import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
 import { AboutComponent } from './components/about/about.component';
 import { MedicineComponent } from './components/medicine/medicine.component';
+import { LaboratoryComponent } from './components/laboratory/laboratory.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,11 +19,12 @@ const routes: Routes = [
   { path: 'farmacia', component: PharmacyComponent },
   { path: 'nosotros', component: AboutComponent },
   { path: 'medicina', component: MedicineComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'laboratorio', component: LaboratoryComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

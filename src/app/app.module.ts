@@ -12,6 +12,7 @@ import { InternshipComponent } from './components/internship/internship.componen
 import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
 import { AboutComponent } from './components/about/about.component';
 import { MedicineComponent } from './components/medicine/medicine.component';
+import { LaboratoryComponent } from './components/laboratory/laboratory.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,11 @@ import { MedicineComponent } from './components/medicine/medicine.component';
     JoinUsComponent,
     InternshipComponent,
     AboutComponent,
-    MedicineComponent
+    MedicineComponent,
+    LaboratoryComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

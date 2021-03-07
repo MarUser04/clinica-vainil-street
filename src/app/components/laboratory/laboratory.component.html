@@ -1,0 +1,57 @@
+<app-background
+    [backgroundColor]="'#fc141c'"
+    [imgURL]="'../../../assets/images/laboratory.jpg'"
+>
+    <div class="laboratoryInfo">
+        <div class="laboratoryInfo__title">Laboratorio</div>
+        <div class="laboratoryInfo__description">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                at ipsum ipsam sapiente assumenda iste hic officiis fugit
+                debitis corporis est maiores molestiae rem amet dolore, nesciunt
+                qui sed fugiat! Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam nisi molestias cupiditate officia ipsa
+                iusto, incidunt perspiciatis. Saepe nisi odio facilis nobis,
+                aspernatur voluptatibus impedit nulla, libero quam, nesciunt
+                praesentium.
+            </p>
+        </div>
+    </div>
+
+    <div class="laboratoryOptions">
+        <div>
+            <img
+                class="laboratoryOptions__image laboratoryOptions__image--left"
+                src="../../../assets/images/examResults.jpg"
+                alt="Resultados de muestras"
+            />
+            <button class="laboratoryOptions__button" routerLink="/">
+                Resultados de muestras
+            </button>
+        </div>
+        <div>
+            <img
+                class="laboratoryOptions__image laboratoryOptions__image--right"
+                src="../../../assets/images/bloodTests.jpg"
+                alt="Tomas de sangre"
+            />
+            <button class="laboratoryOptions__button" routerLink="/">
+                Tomas de sangre
+            </button>
+        </div>
+    </div>
+
+    <div class="laboratorySchedule">
+        <h4 class="laboratorySchedule__item laboratorySchedule__item--left">
+            Horario
+        </h4>
+        <p class="laboratorySchedule__subItem">
+            <span>Lunes a viernes</span>
+            <span>8:00am - 6:00p.m</span>
+        </p>
+        <h4 class="laboratorySchedule__item laboratorySchedule__item--right">
+            Teléfono
+        </h4>
+        <p class="laboratorySchedule__subItem">0414-1234567</p>
+    </div>
+</app-background>
