@@ -1,3 +1,5 @@
+@import './../../../vars';
+
 .aboutOption {
   position: absolute;
   display: flex;
@@ -26,6 +28,10 @@
         font-family: 'Futura', 'arial', sans-serif;
         color: #db1a23;
         font-style: italic;
+
+        @media screen and (max-width: $sm) {
+          display: none;
+        }
       }
 
       & i {
@@ -35,6 +41,14 @@
         border-radius: 12px;
         padding: 15px;
         background: #db1a23;
+
+        @media screen and (max-width: $customBreakpoint) {
+          padding: 0;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+        }
       }
     }
 
@@ -47,6 +61,44 @@
 
       &:hover {
         cursor: pointer;
+      }
+
+      @media screen and (max-width: $customBreakpoint) {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: $customBreakpoint) {
+      flex-direction: row;
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $sm) {
+      & p {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    flex-direction: column;
+    align-items: flex-start;
+    top: 30%;
+    left: 5%;
+    width: calc(100vw - 60%);
+
+    &__icon {
+      &--selected {
+        flex-direction: row;
+      }
+
+      &--selected:nth-child(2n),
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
       }
     }
   }
@@ -81,6 +133,24 @@
       &:hover {
         cursor: pointer;
       }
+
+      @media screen and (max-width: $customBreakpoint) {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: $customBreakpoint) {
+      left: 0;
+      right: 0;
+      width: auto;
+      bottom: 2.5%;
+
+      & p {
+        font-size: 3vw;
+      }
     }
   }
 }
@@ -100,5 +170,22 @@
     text-align: justify;
     font-family: 'Futura', 'arial', sans-serif;
     padding-right: 15px;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    top: 30%;
+    right: 5%;
+    left: auto;
+    width: calc(100vw - 40%);
+
+    & p {
+      padding-right: 0;
+      font-size: 4vw;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    width: calc(100vw - 30%);
   }
 }

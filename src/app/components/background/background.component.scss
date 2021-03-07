@@ -84,9 +84,12 @@
       }
     }
 
-    @media screen and (max-width: $customBreakpoint) {
-      top: 28%;
-      left: 18%;
+    @media screen and (min-width: $sm) and (max-width: $customBreakpoint) {
+      right: 0;
+      left: 0;
+      width: 75%;
+      margin: auto;
+      top: 20%;
     }
   }
 
