@@ -1,33 +1,48 @@
-<app-background [backgroundColor]="'#fc141c'" [imgURL]="'../../../assets/images/internship.jpg'" [secondBg]="'../../../assets/images/internshipsImg2.jpg'">
-  <div class="intershipInfo">
-    <div class="intershipInfo__title">
-      Culmina tu pregrado
+<app-background
+    [backgroundColor]="'#fc141c'"
+    [imgURL]="'../../../assets/images/internship.jpg'"
+    [secondBg]="'../../../assets/images/internshipsImg2.jpg'"
+>
+    <div class="intershipInfo">
+        <div class="intershipInfo__title">Culmina tu pregrado</div>
+        <div class="intershipInfo__description">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                at ipsum ipsam sapiente assumenda iste hic officiis fugit
+                debitis corporis est maiores molestiae rem amet dolore, nesciunt
+                qui sed fugiat! Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam nisi molestias cupiditate officia ipsa
+                iusto, incidunt perspiciatis. Saepe nisi odio facilis nobis,
+                aspernatur voluptatibus impedit nulla, libero quam, nesciunt
+                praesentium.
+            </p>
+        </div>
     </div>
-    <div class="intershipInfo__description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe at ipsum ipsam sapiente assumenda iste hic officiis fugit debitis corporis est maiores molestiae rem amet dolore, nesciunt qui sed fugiat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi molestias cupiditate officia ipsa iusto, incidunt perspiciatis. Saepe nisi odio facilis nobis, aspernatur voluptatibus impedit nulla, libero quam, nesciunt praesentium.</p>
+    <div class="intershipForm">
+        <span>Solicitar Cita</span>
+        <div class="intershipForm__container">
+            <div class="intershipForm__container__input">
+                <p class="intershipForm__container__input__text">Nombre</p>
+                <input type="text" />
+            </div>
+            <div class="intershipForm__container__input">
+                <p class="intershipForm__container__input__text">Universidad</p>
+                <select name="university" id="university">
+                    <option hidden selected>Seleccione una Universidad</option>
+                    <option value="ula">Universidad de Los Andes</option>
+                    <option value="ucv">
+                        Universidad Central de Venezuela
+                    </option>
+                    <option value="UCAB">
+                        Universidad Catolica Leandro Casique
+                    </option>
+                </select>
+            </div>
+            <div class="intershipForm__container__input">
+                <p class="intershipForm__container__input__text">Correo</p>
+                <input type="text" />
+            </div>
+        </div>
+        <button class="intershipForm__button">Enviar</button>
     </div>
-  </div>
-  <div class="intershipForm">
-    <span>Solicitar Cita</span>
-    <div class="intershipForm__container">
-      <div class="intershipForm__container__input">
-        <p class="intershipForm__container__input__text">Nombre</p>
-        <input type="text">
-      </div>
-      <div class="intershipForm__container__input">
-        <p class="intershipForm__container__input__text">Universidad</p>
-        <select name="university" id="university">
-          <option hidden selected>Seleccione una Universidad</option>
-          <option value="ula">Universidad de Los Andes</option>
-          <option value="ucv">Universidad Central de Venezuela</option>
-          <option value="UCAB">Universidad Catolica Leandro Casique</option>
-        </select>
-      </div>
-      <div class="intershipForm__container__input">
-        <p class="intershipForm__container__input__text">Correo</p>
-        <input type="text">
-      </div>
-    </div>
-    <button class="intershipForm__button">Enviar</button>
-  </div>
 </app-background>
