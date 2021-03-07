@@ -1,26 +1,102 @@
-<div class="containerMain" [ngStyle]="{'background-color': backgroundColor}">
-  <div class="container__background">
-    <img [src]="backgroundColor == '#fc141c' ? '../../../assets/images/logo1.png' : '../../../assets/images/logo2.png' " alt="" class="homeLogo">
-    <div class="circle1" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? 'white' : '#fc141c'}">
-      <div class="circle2" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? '#fc141c' : 'white', 'background-image': secondBg ? 'url(' + secondBg + ')' : none}"></div>
+<div class="containerMain" [ngStyle]="{ 'background-color': backgroundColor }">
+    <div class="container__background">
+        <img
+            [src]="
+                backgroundColor == '#fc141c'
+                    ? '../../../assets/images/logo1.png'
+                    : '../../../assets/images/logo2.png'
+            "
+            alt=""
+            class="homeLogo"
+        />
+        <div
+            class="circle-1"
+            [ngStyle]="{
+                'background-color':
+                    backgroundColor == '#fc141c' ? 'white' : '#fc141c'
+            }"
+        >
+            <div
+                class="circle-2"
+                [ngStyle]="{
+                    'background-color':
+                        backgroundColor == '#fc141c' ? '#fc141c' : 'white',
+                    'background-image': secondBg
+                        ? 'url(' + secondBg + ')'
+                        : none
+                }"
+            ></div>
+        </div>
+        <div
+            class="container__img"
+            [ngStyle]="{ 'background-image': 'url(' + imgURL + ')' }"
+        ></div>
+        <div class="container__menu">
+            <div
+                class="container__menu__nav"
+                [ngStyle]="{
+                    'background-color':
+                        backgroundColor == '#fc141c' ? 'white' : '#fc141c',
+                    color: backgroundColor == '#fc141c' ? '#db1a23' : 'white'
+                }"
+            >
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/"
+                    routerLinkActive="linkActive"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                >
+                    Home
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    (click)="subMenu()"
+                    [ngClass]="{ subMenuBack: subMenuActive }"
+                >
+                    Servicios
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/nosotros"
+                    routerLinkActive="linkActive"
+                >
+                    Nosotros
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/pasantias"
+                    routerLinkActive="linkActive"
+                >
+                    Pasantias
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/unete"
+                    routerLinkActive="linkActive"
+                >
+                    Únete
+                </div>
+            </div>
+        </div>
+        <div class="container__submenu" *ngIf="subMenuActive">
+            <div
+                class="container__submenu__item"
+                routerLink="/especialidades"
+                routerLinkActive="linkActiveSubMenu"
+            >
+                Especialidades
+            </div>
+            <div
+                class="container__submenu__item"
+                routerLink="/farmacia"
+                routerLinkActive="linkActiveSubMenu"
+            >
+                Farmacia
+            </div>
+            <div class="container__submenu__item">Laborarios</div>
+        </div>
+        <div class="container__body">
+            <ng-content></ng-content>
+        </div>
     </div>
-    <div class="container__img" [ngStyle]="{'background-image': 'url(' + imgURL + ')'}"></div>
-    <div class="container__menu">
-      <div class="container__menu__nav" [ngStyle]="{'background-color': backgroundColor == '#fc141c' ? 'white' : '#fc141c', 'color': backgroundColor == '#fc141c' ? '#db1a23' : 'white'}">
-        <div class="container__menu__nav__item" routerLink="/" routerLinkActive="linkActive" [routerLinkActiveOptions]="{exact: true}">Home</div>
-        <div class="container__menu__nav__item" (click)="subMenu()" [ngClass]="{subMenuBack: subMenuActive}">Servicios</div>
-        <div class="container__menu__nav__item" routerLink="/nosotros" routerLinkActive="linkActive">Nosotros</div>
-        <div class="container__menu__nav__item" routerLink="/pasantias" routerLinkActive="linkActive">Pasantias</div>
-        <div class="container__menu__nav__item" routerLink="/unete" routerLinkActive="linkActive">Únete</div>
-      </div>
-    </div>
-    <div class="container__submenu" *ngIf="subMenuActive">
-      <div class="container__submenu__item" routerLink="/especialidades" routerLinkActive="linkActiveSubMenu">Especialidades</div>
-      <div class="container__submenu__item"  routerLink="/farmacia" routerLinkActive="linkActiveSubMenu">Farmacia</div>
-      <div class="container__submenu__item">Laborarios</div>
-    </div>
-  <div class="container__body">
-    <ng-content></ng-content>
-  </div>
 </div>
-
