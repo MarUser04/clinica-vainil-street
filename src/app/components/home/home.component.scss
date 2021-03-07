@@ -1,0 +1,104 @@
+.homeMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 34%;
+  left: 21%;
+
+  &__title {
+    font-size: 4vw;
+    font-family: 'OpenSans';
+    color: white;
+    margin: 0;
+
+    @media screen and (max-width: 900px) {
+      font-size: 6vw;
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    &__item {
+      border: 2px solid white;
+      border-radius: 4px;
+      padding: 10px;
+      margin-right: 8px;
+      text-align: center;
+      font-family: 'Futura', 'arial', sans-serif;
+      color: #db1a23;
+
+      & > i {
+        color: white;
+        font-size: 3vw;
+
+        @media screen and (max-width: 900px) {
+          font-size: 6vw;
+        }
+      }
+
+      &:last-child {
+        background: white;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    top: 36%;
+    left: 25%;
+  }
+}
+
+.homeInfo {
+  position: absolute;
+  top: 70%;
+  left: 28%;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  background: white;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1.3vw;
+
+  &__lab {
+    border-right: 3px solid red;
+  }
+
+  &__lab,
+  &__farmacia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    font-family: 'Futura', 'arial', sans-serif;
+    color: #db1a23;
+
+    &__header {
+      display: flex;
+      font-size: 2vw;
+      justify-content: flex-start;
+      align-items: center;
+
+      & > i {
+        font-size: 1.5vw;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    left: 15%;
+    width: 70%;
+    font-size: 1.8vw;
+  }
+}
