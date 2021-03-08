@@ -1,3 +1,5 @@
+@import './../../../vars';
+
 .laboratoryInfo {
   position: absolute;
   display: flex;
@@ -16,10 +18,25 @@
     padding-bottom: 10px;
     width: 55%;
     font-size: 1.6vw;
+
+    @media screen and (max-width: $customBreakpoint) {
+      text-align: center;
+    }
   }
 
   &__description {
     font-size: 1.2vw;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto;
+
+    & * {
+      font-size: 4vw;
+    }
   }
 }
 
@@ -54,6 +71,17 @@
     flex-direction: column;
     margin: 0 0 1vw;
     font-size: 1.5vw;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto;
+
+    & * {
+      font-size: 4vw;
+    }
   }
 }
 
@@ -104,5 +132,17 @@
     background: #db1a23;
     color: white;
     font-family: 'Futura', 'arial', sans-serif;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto;
+    flex-direction: column;
+
+    & * {
+      font-size: 4vw;
+    }
   }
 }
