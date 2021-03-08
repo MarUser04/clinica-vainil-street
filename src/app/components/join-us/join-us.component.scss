@@ -8,12 +8,12 @@
   width: 40%;
   top: 24%;
   left: 14%;
-  color: #db1a23;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $btnPrimary;
+  font-family: $textFontFamily;
 
   &__title {
     text-align: right;
-    border-bottom: 4px solid #db1a23;
+    border-bottom: 4px solid $btnPrimary;
     border-bottom-width: 5px;
     padding-bottom: 10px;
     width: 55%;
@@ -47,12 +47,12 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  background: #fc141c;
+  background: $primaryColor;
   padding: 7px 15px;
   margin: 7px;
   border-radius: 12px;
-  color: white;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $secondaryColor;
+  font-family: $textFontFamily;
 
   & span {
     font-size: 1.7vw;
@@ -100,9 +100,9 @@
     border: none;
     font-size: 1.2vw;
     font-style: italic;
-    background: white;
-    color: #db1a23;
-    font-family: 'Futura', 'arial', sans-serif;
+    background: $secondaryColor;
+    color: $btnPrimary;
+    font-family: $textFontFamily;
     align-self: flex-end;
     margin-right: 4%;
 
@@ -133,8 +133,8 @@
 input[type='text'],
 textarea,
 select {
-  background-color: white;
-  color: #db1a23;
+  background-color: $secondaryColor;
+  color: $btnPrimary;
   border: none;
   font-size: 1vw;
 }
@@ -150,13 +150,13 @@ select {
 
     &__icon {
       font-size: 4vw;
-      color: #db1a23;
+      color: $btnPrimary;
     }
 
     &__text {
       font-size: 2vw;
-      color: #db1a23;
-      font-family: 'Futura', 'arial', sans-serif;
+      color: $btnPrimary;
+      font-family: $textFontFamily;
       letter-spacing: 5px;
       text-align: center;
     }

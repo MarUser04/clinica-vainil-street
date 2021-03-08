@@ -8,12 +8,12 @@
   width: 40%;
   top: 22%;
   left: 14%;
-  color: white;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $secondaryColor;
+  font-family: $textFontFamily;
 
   &__title {
     text-align: right;
-    border-bottom: 4px solid white;
+    border-bottom: $defaultUnderlineBorder;
     border-bottom-width: 5px;
     padding-bottom: 10px;
     width: 55%;
@@ -44,7 +44,7 @@
   display: flex;
   width: 50%;
   height: 35vh;
-  background: white;
+  background: $secondaryColor;
   border-radius: 12px;
   position: absolute;
   bottom: 8%;
@@ -63,8 +63,8 @@
     flex-direction: column;
     width: 50%;
     padding: 15px;
-    color: #db1a23;
-    font-family: 'Futura', 'arial', sans-serif;
+    color: $btnPrimary;
+    font-family: $textFontFamily;
 
     & p {
       font-size: 1.1vw;
@@ -83,9 +83,9 @@
       border: none;
       font-size: 1.2vw;
       font-style: italic;
-      background: #db1a23;
-      color: white;
-      font-family: 'Futura', 'arial', sans-serif;
+      background: $btnPrimary;
+      color: $secondaryColor;
+      font-family: $textFontFamily;
       align-self: flex-end;
       margin-right: 4%;
 
@@ -136,8 +136,8 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  color: white;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $secondaryColor;
+  font-family: $textFontFamily;
   bottom: 10%;
   left: 2%;
 
@@ -155,7 +155,7 @@
     border: none;
     height: 25px;
     width: 200px;
-    color: #db1a23;
+    color: $btnPrimary;
     font-size: 1.1vw;
   }
 
@@ -167,9 +167,9 @@
     border: none;
     font-size: 1vw;
     font-style: italic;
-    background: white;
-    color: #db1a23;
-    font-family: 'Futura', 'arial', sans-serif;
+    background: $secondaryColor;
+    color: $btnPrimary;
+    font-family: $textFontFamily;
     align-self: flex-end;
     margin: 10px 4% 10px 10px;
 

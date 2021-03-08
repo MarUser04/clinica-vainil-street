@@ -8,12 +8,12 @@
   width: 40%;
   top: 25%;
   left: 14%;
-  color: white;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $secondaryColor;
+  font-family: $textFontFamily;
 
   &__title {
     text-align: right;
-    border-bottom: 4px solid white;
+    border-bottom: $defaultUnderlineBorder;
     border-bottom-width: 5px;
     padding-bottom: 10px;
     width: 55%;
@@ -42,8 +42,8 @@
 
 .laboratorySchedule {
   position: absolute;
-  color: white;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $secondaryColor;
+  font-family: $textFontFamily;
   bottom: 5%;
   left: 2%;
   width: 14%;
@@ -53,7 +53,7 @@
     font-style: italic;
     font-weight: normal;
     margin: 0 0 0.8vw;
-    border-bottom: 4px solid white;
+    border-bottom: $defaultUnderlineBorder;
     border-bottom-width: 5px;
 
     &--right {
@@ -89,7 +89,7 @@
   display: flex;
   width: 50%;
   height: 35vh;
-  background: white;
+  background: $secondaryColor;
   border-radius: 12px;
   position: absolute;
   bottom: 8%;
@@ -129,9 +129,9 @@
     border: none;
     font-size: 1.2vw;
     font-style: italic;
-    background: #db1a23;
-    color: white;
-    font-family: 'Futura', 'arial', sans-serif;
+    background: $btnPrimary;
+    color: $secondaryColor;
+    font-family: $textFontFamily;
   }
 
   @media screen and (max-width: $customBreakpoint) {

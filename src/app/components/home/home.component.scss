@@ -11,8 +11,8 @@
 
   &__title {
     font-size: 4vw;
-    font-family: 'OpenSans', 'sans-serif';
-    color: white;
+    font-family: $titlesFontFamily;
+    color: $secondaryColor;
     margin: 0;
 
     @media screen and (max-width: $customBreakpoint) {
@@ -27,16 +27,16 @@
     margin-top: 10px;
 
     &__item {
-      border: 2px solid white;
+      border: 2px solid $secondaryColor;
       border-radius: 4px;
       padding: 10px;
       margin-right: 8px;
       text-align: center;
-      font-family: 'Futura', 'arial', sans-serif;
-      color: #db1a23;
+      font-family: $textFontFamily;
+      color: $btnPrimary;
 
       & > i {
-        color: white;
+        color: $secondaryColor;
         font-size: 3vw;
 
         @media screen and (max-width: $sm) {
@@ -47,7 +47,7 @@
       &:last-child {
         display: flex;
         flex-direction: column;
-        background: white;
+        background: $secondaryColor;
 
         &:hover {
           cursor: pointer;
@@ -87,7 +87,7 @@
   display: flex;
   width: 60%;
   justify-content: space-around;
-  background: white;
+  background: $secondaryColor;
   height: auto;
   padding: 10px;
   border-radius: 20px;
@@ -108,8 +108,8 @@
     flex-direction: column;
     width: 100%;
     padding: 15px;
-    font-family: 'Futura', 'arial', sans-serif;
-    color: #db1a23;
+    font-family: $textFontFamily;
+    color: $btnPrimary;
 
     &__header {
       display: flex;

@@ -1,3 +1,5 @@
+@import './../../../vars';
+
 .medicineInfo {
   position: absolute;
   display: flex;
@@ -6,8 +8,8 @@
   width: 50%;
   top: 27%;
   left: 8%;
-  color: #db1a23;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $btnPrimary;
+  font-family: $textFontFamily;
 
   &__description {
     font-size: 1.2vw;
@@ -21,12 +23,12 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  background: #db1a23;
+  background: $btnPrimary;
   padding: 20px;
   margin: 7px;
   border-radius: 12px;
-  color: white;
-  font-family: 'Futura', 'arial', sans-serif;
+  color: $secondaryColor;
+  font-family: $textFontFamily;
 
   & span {
     font-size: 22px;
@@ -82,9 +84,9 @@
     font-size: 1vw;
     font-style: italic;
     font-weight: bold;
-    background: white;
-    color: #db1a23;
-    font-family: 'Futura', 'arial', sans-serif;
+    background: $secondaryColor;
+    color: $btnPrimary;
+    font-family: $textFontFamily;
     align-self: flex-end;
 
     &:hover {
@@ -96,8 +98,8 @@
 input[type='text'],
 textarea,
 select {
-  background-color: white;
-  color: #db1a23;
+  background-color: $secondaryColor;
+  color: $btnPrimary;
   border: none;
   font-size: 1vw;
 }

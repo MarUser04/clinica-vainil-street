@@ -55,7 +55,7 @@
       display: flex;
       flex-direction: row;
       border-radius: 11px;
-      font-family: 'Futura', 'arial', sans-serif;
+      font-family: $textFontFamily;
 
       &__item {
         padding: 8px 20px;
@@ -64,8 +64,8 @@
         text-align: center;
 
         &:hover {
-          background: #56161a;
-          color: white;
+          background: $activeColor;
+          color: $secondaryColor;
           cursor: pointer;
         }
 
@@ -100,13 +100,13 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    background: #56161a;
+    background: $activeColor;
     top: 15.6%;
     width: 11.9vw;
     left: 33.9%;
     font-size: 1.2vw;
-    color: white;
-    font-family: 'Futura', 'arial', sans-serif;
+    color: $secondaryColor;
+    font-family: $textFontFamily;
     z-index: 1;
 
     &__item {
@@ -114,9 +114,9 @@
 
       &:hover {
         cursor: pointer;
-        background: white !important;
-        color: #56161a;
-        border: 1px solid #56161a;
+        background: $secondaryColor !important;
+        color: $activeColor;
+        border: 1px solid $activeColor;
       }
     }
   }
@@ -139,17 +139,17 @@
 }
 
 .linkActive {
-  background: #56161a;
-  color: white;
+  background: $activeColor;
+  color: $secondaryColor;
 }
 
 .subMenuBack {
-  background: #56161a;
-  color: white;
+  background: $activeColor;
+  color: $secondaryColor;
 }
 
 .linkActiveSubMenu {
-  background: white !important;
-  color: #56161a;
-  border: 1px solid #56161a;
+  background: $secondaryColor !important;
+  color: $activeColor;
+  border: 1px solid $activeColor;
 }
