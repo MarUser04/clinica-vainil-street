@@ -1,3 +1,5 @@
+@import './../../../vars';
+
 .pharmacyInfo {
   position: absolute;
   display: flex;
@@ -16,10 +18,25 @@
     padding-bottom: 10px;
     width: 55%;
     font-size: 1.6vw;
+
+    @media screen and (max-width: $customBreakpoint) {
+      text-align: center;
+    }
   }
 
   &__description {
     font-size: 1.2vw;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto;
+
+    & * {
+      font-size: 4vw;
+    }
   }
 }
 
@@ -36,6 +53,9 @@
   & img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
   }
 
   &__info {
@@ -72,7 +92,43 @@
       &:hover {
         cursor: pointer;
       }
+
+      @media screen and (max-width: $customBreakpoint) {
+        display: block;
+        width: 95%;
+        margin: 10px auto;
+      }
     }
+
+    @media screen and (max-width: $customBreakpoint) {
+      width: 100%;
+      padding: 0;
+    }
+
+    @media screen and (min-width: $sm) and (max-width: $customBreakpoint) {
+      width: 100%;
+      padding: 0;
+
+      & * {
+        font-size: 2.5vw !important;
+      }
+    }
+
+    @media screen and (max-width: $sm) {
+      & * {
+        font-size: 4vw !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    max-width: 500px;
+    flex-direction: column;
+    height: auto;
   }
 }
 
@@ -88,6 +144,10 @@
   & span {
     padding: 10px;
     font-size: 2vw;
+
+    @media screen and (max-width: $customBreakpoint) {
+      padding: 0;
+    }
   }
 
   & input {
@@ -102,7 +162,6 @@
   & button {
     width: 40%;
     padding: 6px;
-    margin: 10px;
     font-weight: bold;
     border-radius: 15px;
     border: none;
@@ -112,10 +171,25 @@
     color: #db1a23;
     font-family: 'Futura', 'arial', sans-serif;
     align-self: flex-end;
-    margin-right: 4%;
+    margin: 10px 4% 10px 10px;
 
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    position: static;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+    & * {
+      font-size: 4vw !important;
+      width: 90% !important;
+      margin: 10px auto !important;
     }
   }
 }
