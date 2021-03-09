@@ -17,11 +17,17 @@
             </p>
         </div>
     </div>
-    <div class="doctorContact">
+    <div class="doctorContact" *ngIf="innerWidth > 900">
         <div class="doctorContact__email">
             <div class="doctorContact__email__title">Contacto</div>
             <span>ccvsdrleandrocasique@gmail.com</span>
         </div>
+    </div>
+    <div class="doctorInfoOnMobile" *ngIf="innerWidth <= 900">
+        <span>Horario</span>
+        <span>Lunes a Viernes</span>
+        <span>7:00 a.m - 3:00 p.m</span>
+        <span>ccvsdrleandrocasique@gmail.com</span>
     </div>
     <div class="doctorForm">
         <span>Solicitar Cita</span>
@@ -41,7 +47,7 @@
         </div>
         <button class="doctorForm__button">Enviar</button>
     </div>
-    <div class="doctorSchedule">
+    <div class="doctorSchedule" *ngIf="innerWidth > 900">
         <span>Horario</span>
         <span>Lunes a Viernes</span>
         <span>7:00 a.m - 3:00 p.m</span>

@@ -33,7 +33,18 @@
             class="container__img"
             [ngStyle]="{ 'background-image': 'url(' + imgURL + ')' }"
         ></div>
-        <div class="container__menu">
+        <span
+            *ngIf="showMenuButton"
+            class="container__menuButton"
+            (click)="showMenuEvent()"
+        >
+            <i class="fas fa-bars"></i>
+        </span>
+        <div
+            [ngClass]="
+                showMenu ? 'container__menu' : 'container__hideMenuMobile'
+            "
+        >
             <div
                 class="container__menu__nav"
                 [ngStyle]="{
@@ -52,10 +63,35 @@
                 </div>
                 <div
                     class="container__menu__nav__item"
+                    *ngIf="innerWidth > 900"
                     (click)="subMenu()"
                     [ngClass]="{ subMenuBack: subMenuActive }"
                 >
                     Servicios
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/especialidades"
+                    routerLinkActive="linkActive"
+                    *ngIf="innerWidth <= 900"
+                >
+                    Especialidades
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/farmacia"
+                    routerLinkActive="linkActive"
+                    *ngIf="innerWidth <= 900"
+                >
+                    Farmacia
+                </div>
+                <div
+                    class="container__menu__nav__item"
+                    routerLink="/laboratorio"
+                    routerLinkActive="linkActive"
+                    *ngIf="innerWidth <= 900"
+                >
+                    Laboratorios
                 </div>
                 <div
                     class="container__menu__nav__item"

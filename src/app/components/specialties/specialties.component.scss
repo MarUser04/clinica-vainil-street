@@ -36,6 +36,21 @@
       font-weight: bold;
       color: $secondaryColor;
     }
+
+    @media screen and (max-width: $customBreakpoint) {
+      & > i {
+        margin: 0px 20px;
+        font-size: 3vw;
+        &:last-child {
+          margin: 0px 15px;
+        }
+      }
+
+      & > p {
+        width: 60%;
+        font-size: 2.5vw;
+      }
+    }
   }
 
   &__title {
@@ -59,6 +74,21 @@
       color: $secondaryColor;
       padding-right: 20px;
     }
+
+    @media screen and (max-width: $customBreakpoint) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0px;
+
+      & > i {
+        font-size: 3.6vw;
+      }
+
+      & > span {
+        font-size: 2vw;
+      }
+    }
   }
 
   &__slogan {
@@ -69,5 +99,11 @@
     font-size: 1.8vw;
     font-family: $textFontFamily;
     letter-spacing: 5px;
+  }
+
+  @media screen and (max-width: $customBreakpoint) {
+    width: 45%;
+    margin-top: 20px;
+    left: 24%;
   }
 }

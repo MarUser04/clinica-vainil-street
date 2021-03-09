@@ -46,10 +46,30 @@
     }
   }
 
+  &__hideMenuMobile {
+    display: none;
+  }
+
+  &__menuButton {
+    top: 14%;
+    padding: 8px 19px;
+    margin: 5px;
+    position: absolute;
+    border-radius: 5px;
+    background: white;
+    color: $activeColor;
+    border: 2px solid $activeColor;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   &__menu {
     position: absolute;
     top: 10%;
     left: 22%;
+    z-index: 1;
 
     &__nav {
       display: flex;
@@ -85,14 +105,26 @@
       }
     }
 
-    @media screen and (min-width: $sm) and (max-width: $customBreakpoint) {
-      right: 0;
-      left: 0;
-      width: 75%;
-      margin: auto;
-      position: relative;
-      top: 0;
-      padding: 10px 0;
+    @media screen and (max-width: $customBreakpoint) {
+      position: static;
+      &__nav {
+        flex-direction: column;
+        &__item {
+          font-size: 3vw;
+          padding: 8px 17px;
+          width: 100%;
+
+          &:first-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+
+          &:last-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
     }
   }
 
@@ -118,6 +150,13 @@
         color: $activeColor;
         border: 1px solid $activeColor;
       }
+    }
+
+    @media screen and (max-width: $customBreakpoint) {
+      top: 20.8%;
+      width: auto;
+      left: 15%;
+      font-size: 3.5vw;
     }
   }
 }
