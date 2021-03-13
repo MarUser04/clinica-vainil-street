@@ -44,10 +44,6 @@ export class BackgroundComponent implements OnInit {
     this.clickListener();
   }
 
-  public subMenu() {
-    this.subMenuActive = !this.subMenuActive;
-  }
-
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.innerWidth = window.innerWidth;
@@ -58,6 +54,10 @@ export class BackgroundComponent implements OnInit {
       this.showMenu = true;
       this.showMenuButton = false;
     }
+  }
+
+  public subMenu() {
+    this.subMenuActive = !this.subMenuActive;
   }
 
   public showMenuEvent() {
