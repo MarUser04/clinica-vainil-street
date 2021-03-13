@@ -1,4 +1,10 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  Input,
+  OnInit,
+  Renderer2,
+} from '@angular/core';
 
 @Component({
   selector: 'app-background',
@@ -13,8 +19,9 @@ export class BackgroundComponent implements OnInit {
   private innerWidth: any;
   public showMenu: boolean = true;
   private showMenuButton: boolean = false;
+  public clickListener: any;
 
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
@@ -25,6 +32,16 @@ export class BackgroundComponent implements OnInit {
       this.showMenu = true;
       this.showMenuButton = false;
     }
+
+    this.clickListener = this.renderer.listen('document', 'click', (e: any) => {
+      if (!e.target.className.includes('menu')) {
+        this.subMenuActive = false;
+      }
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.clickListener();
   }
 
   public subMenu() {
