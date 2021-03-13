@@ -2,17 +2,17 @@
     [backgroundColor]="'#FFFFFF'"
     [imgURL]="'../../../assets/images/imgHome.jpg'"
 >
+    <div class="specialities__title">
+        <i class="fas fa-dna"></i>
+        <span>Nuestras especialidades</span>
+    </div>
+
     <div class="specialities">
         <div class="specialities__item" *ngFor="let speciality of specialities">
             <i class="fas fa-dna"></i>
             <p>{{ speciality }}</p>
             <i class="fas fa-arrow-right"></i>
         </div>
-    </div>
-
-    <div class="specialities__title">
-        <i class="fas fa-dna"></i>
-        <span>Nuestras especialidades</span>
     </div>
 
     <div class="specialities__slogan">

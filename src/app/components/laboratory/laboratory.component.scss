@@ -137,9 +137,14 @@
   @media screen and (max-width: $customBreakpoint) {
     position: static;
     width: 80%;
+    height: auto;
     align-items: center;
     margin: 20px auto;
     flex-direction: column;
+
+    &__image {
+      width: 50vw;
+    }
 
     & * {
       font-size: 4vw;

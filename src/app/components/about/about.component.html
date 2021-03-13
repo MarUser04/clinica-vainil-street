@@ -3,6 +3,10 @@
     [imgURL]="'../../../assets/images/About.jpg'"
 >
     <div class="aboutContainer">
+        <div class="aboutActionSelected__icon">
+            <i class="{{ currentSelectionIcon }}"></i>
+            <p>{{ currentSelection }}</p>
+        </div>
         <div class="aboutOption">
             <div
                 (click)="
@@ -90,11 +94,6 @@
                 aspernatur eveniet sed reprehenderit sit neque ducimus animi
                 facilis maxime.
             </p>
-        </div>
-
-        <div class="aboutActionSelected__icon">
-            <i class="{{ currentSelectionIcon }}"></i>
-            <p>{{ currentSelection }}</p>
         </div>
     </div>
 </app-background>

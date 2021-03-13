@@ -11,7 +11,7 @@ export class BackgroundComponent implements OnInit {
   @Input() secondBg: string;
   private subMenuActive: boolean;
   private innerWidth: any;
-  private showMenu: boolean = true;
+  public showMenu: boolean = true;
   private showMenuButton: boolean = false;
 
   constructor() {}

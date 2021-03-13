@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackgroundComponent } from '../background/background.component';
 
 @Component({
   selector: 'app-about',

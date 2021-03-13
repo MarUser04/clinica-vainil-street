@@ -1,6 +1,12 @@
 @import './../../../vars';
 
 .aboutContainer {
+  @media screen and (max-width: $customBreakpoint) {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin-top: 5%;
+  }
 }
 
 .aboutOption {
@@ -88,10 +94,11 @@
   }
 
   @media screen and (max-width: $customBreakpoint) {
+    position: static;
     flex-direction: column;
     align-items: flex-start;
-    top: 30%;
-    left: 5%;
+    margin-left: 5%;
+    margin-top: 8%;
     width: calc(100vw - 60%);
 
     &__icon {
@@ -146,14 +153,7 @@
     }
 
     @media screen and (max-width: $customBreakpoint) {
-      left: 0;
-      right: 0;
-      width: auto;
-      bottom: 2.5%;
-
-      & p {
-        font-size: 3vw;
-      }
+      display: none;
     }
   }
 }
@@ -176,8 +176,7 @@
   }
 
   @media screen and (max-width: $customBreakpoint) {
-    top: 30%;
-    right: 5%;
+    position: static;
     left: auto;
     width: calc(100vw - 40%);
 
