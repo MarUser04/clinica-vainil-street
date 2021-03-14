@@ -15,10 +15,10 @@ export class BackgroundComponent implements OnInit {
   @Input() backgroundColor: string;
   @Input() imgURL: string;
   @Input() secondBg: string;
-  private subMenuActive: boolean;
-  private innerWidth: any;
+  public subMenuActive: boolean;
+  public innerWidth: any;
   public showMenu: boolean = true;
-  private showMenuButton: boolean = false;
+  public showMenuButton: boolean = false;
   public clickListener: any;
 
   constructor(private renderer: Renderer2) {}

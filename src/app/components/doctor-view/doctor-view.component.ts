@@ -9,7 +9,7 @@ import { SpecialityService } from '../specialties/speciality.service';
   styleUrls: ['./doctor-view.component.scss'],
 })
 export class DoctorViewComponent implements OnInit {
-  private innerWidth: any;
+  public innerWidth: any;
 
   doctorAliasSlug;
   doctorAlias;

@@ -7,8 +7,8 @@ import { BackgroundComponent } from '../background/background.component';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  private currentSelection = 'Junta Directiva';
-  private currentSelectionIcon = 'fas fa-user-cog';
+  public currentSelection = 'Junta Directiva';
+  public currentSelectionIcon = 'fas fa-user-cog';
 
   constructor() {}
 
