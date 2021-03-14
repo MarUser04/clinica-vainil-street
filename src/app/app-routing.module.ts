@@ -9,6 +9,7 @@ import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
 import { AboutComponent } from './components/about/about.component';
 import { MedicineComponent } from './components/medicine/medicine.component';
 import { LaboratoryComponent } from './components/laboratory/laboratory.component';
+import { DoctorsComponent } from './components/doctors/doctors.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'nosotros', component: AboutComponent },
   { path: 'medicina', component: MedicineComponent },
   { path: 'laboratorio', component: LaboratoryComponent },
+  { path: 'doctores', component: DoctorsComponent },
   { path: '**', redirectTo: '' },
 ];
 

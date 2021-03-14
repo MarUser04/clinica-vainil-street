@@ -13,6 +13,7 @@ import { PharmacyComponent } from './components/pharmacy/pharmacy.component';
 import { AboutComponent } from './components/about/about.component';
 import { MedicineComponent } from './components/medicine/medicine.component';
 import { LaboratoryComponent } from './components/laboratory/laboratory.component';
+import { DoctorsComponent } from './components/doctors/doctors.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LaboratoryComponent } from './components/laboratory/laboratory.componen
     AboutComponent,
     MedicineComponent,
     LaboratoryComponent,
+    DoctorsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

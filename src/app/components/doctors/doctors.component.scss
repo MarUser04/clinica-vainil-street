@@ -1,0 +1,70 @@
+@import './../../../vars';
+
+.doctors {
+  position: absolute;
+  top: 28%;
+  left: 15%;
+
+  &__title {
+    position: absolute;
+    background-color: $primaryColor;
+    top: 84%;
+    left: 70%;
+    padding: 15px;
+    border-radius: 15px;
+    color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    & > i {
+      margin: 0 10px 0 60px;
+      font-size: 3.5vw;
+    }
+
+    & > span {
+      font-size: 2vw;
+      font-family: $textFontFamily;
+      font-style: italic;
+      color: $secondaryColor;
+      padding-right: 20px;
+      margin-right: 60px;
+    }
+  }
+}
+
+.doctor {
+  display: flex;
+  justify-content: flex-start;
+
+  &__image {
+    margin-right: 20px;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 12px solid $primaryColor;
+  }
+  &__image img {
+    width: 100%;
+    height: auto;
+  }
+  &__information {
+    width: 32%;
+    color: $primaryColor;
+    font-family: 'Futura', 'arial', sans-serif;
+
+    & > h2 {
+      font-size: 1.6vw;
+      border-bottom: 4px solid $primaryColor;
+      border-bottom-width: 5px;
+      padding-bottom: 10px;
+    }
+
+    & > p {
+      font-size: 1.2vw;
+    }
+  }
+}
