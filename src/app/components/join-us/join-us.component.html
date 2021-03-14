@@ -37,7 +37,7 @@
         <div class="joinUsForm__container">
             <div class="joinUsForm__container__input">
                 <p class="joinUsForm__container__input__text">Cargo</p>
-                <select name="Cargo" id="Cargo">
+                <select name="Cargo" id="Cargo" [(ngModel)]="currentJob">
                     <option hidden selected>Selecciona un cargo</option>
                     <option value="Medico residente">Medico residente</option>
                     <option value="Administrativo">Administrativo</option>
@@ -54,11 +54,26 @@
             </div>
             <div class="joinUsForm__container__input">
                 <p class="joinUsForm__container__input__text">Especialidad</p>
-                <select name="Cargo" id="Cargo">
+                <select name="Cargo" id="Cargo" *ngIf="currentJob == 'Selecciona un cargo'">
                     <option hidden selected>Selecciona una especialidad</option>
-                    <option value="Medico residente">Ron Casique</option>
-                    <option value="Administrativo">Leandro Jose</option>
-                    <option value="Obrero">Ronsi</option>
+                </select>
+                <select name="Cargo" id="Cargo" *ngIf="currentJob == 'Medico residente'">
+                    <option hidden selected>Selecciona una especialidad</option>
+                    <option value="Pediatra">Pediatra</option>
+                    <option value="Cirujano">Cirujano</option>
+                    <option value="Dermatólogo">Dermatólogo</option>
+                </select>
+                <select name="Cargo" id="Cargo" *ngIf="currentJob == 'Administrativo'">
+                    <option hidden selected>Selecciona una especialidad</option>
+                    <option value="Secretaría">Secretaría</option>
+                    <option value="Contaduría">Contaduría</option>
+                    <option value="Relaciones Públicas">Relaciones Públicas</option>
+                </select>
+                <select name="Cargo" id="Cargo" *ngIf="currentJob == 'Obrero'">
+                    <option hidden selected>Selecciona una especialidad</option>
+                    <option value="Limpieza">Limpieza</option>
+                    <option value="Cocina">Cocina</option>
+                    <option value="Técnicos">Técnicos</option>
                 </select>
             </div>
             <div class="joinUsForm__container__input">

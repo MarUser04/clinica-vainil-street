@@ -15,6 +15,7 @@ import { MedicineComponent } from './components/medicine/medicine.component';
 import { LaboratoryComponent } from './components/laboratory/laboratory.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
 import { SpecialityService } from './components/specialties/speciality.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { SpecialityService } from './components/specialties/speciality.service';
     LaboratoryComponent,
     DoctorsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [SpecialityService],
   bootstrap: [AppComponent],
 })

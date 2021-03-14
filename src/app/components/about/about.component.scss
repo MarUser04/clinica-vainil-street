@@ -37,10 +37,6 @@
         font-family: $textFontFamily;
         color: $btnPrimary;
         font-style: italic;
-
-        @media screen and (max-width: $sm) {
-          display: none;
-        }
       }
 
       & i {
@@ -82,33 +78,25 @@
     }
 
     @media screen and (max-width: $customBreakpoint) {
-      flex-direction: row;
+      flex-direction: column;
       margin-top: 5px;
-    }
-
-    @media screen and (max-width: $sm) {
-      & p {
-        display: none;
-      }
     }
   }
 
   @media screen and (max-width: $customBreakpoint) {
     position: static;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 5%;
-    margin-top: 8%;
+    align-items: center;
     width: calc(100vw - 60%);
 
     &__icon {
       &--selected {
-        flex-direction: row;
+        flex-direction: column;
       }
 
       &--selected:nth-child(2n),
       &:nth-child(2n) {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
       }
     }
   }

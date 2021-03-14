@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./join-us.component.scss'],
 })
 export class JoinUsComponent implements OnInit {
+
+  public currentJob: string = "Selecciona un cargo";
+
   constructor() {}
 
   ngOnInit() {}
