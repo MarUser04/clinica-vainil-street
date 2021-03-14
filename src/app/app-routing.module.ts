@@ -14,7 +14,7 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'especialidades', component: SpecialtiesComponent },
-  { path: 'doctor', component: DoctorViewComponent },
+  { path: 'especialidades/:slug/:doctorAlias', component: DoctorViewComponent },
   { path: 'unete', component: JoinUsComponent },
   { path: 'pasantias', component: InternshipComponent },
   { path: 'farmacia', component: PharmacyComponent },

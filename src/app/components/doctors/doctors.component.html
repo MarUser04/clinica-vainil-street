@@ -9,14 +9,29 @@
 
     <div class="doctors">
         <div class="doctor">
-            <div class="doctor__image" routerLink="/doctor">
+            <div
+                class="doctor__image"
+                [routerLink]="[
+                    '/especialidades',
+                    speciality.slug,
+                    speciality.doctorAlias
+                ]"
+            >
                 <img
                     src="../../../assets/images/doctor-1.jpg"
                     alt="Doctor image"
                 />
             </div>
             <div class="doctor__information">
-                <h2 routerLink="/doctor">{{ speciality.doctorAlias }}</h2>
+                <h2
+                    [routerLink]="[
+                        '/especialidades',
+                        speciality.slug,
+                        speciality.doctorAlias
+                    ]"
+                >
+                    {{ speciality.doctorAlias }}
+                </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aliquid amet debitis dolor dolorem dolorum eligendi ipsam
@@ -27,14 +42,29 @@
         </div>
 
         <div class="doctor">
-            <div class="doctor__image" routerLink="/doctor">
+            <div
+                class="doctor__image"
+                [routerLink]="[
+                    '/especialidades',
+                    speciality.slug,
+                    speciality.doctorAlias
+                ]"
+            >
                 <img
                     src="../../../assets/images/doctor-2.jpg"
                     alt="Doctor image"
                 />
             </div>
             <div class="doctor__information">
-                <h2 routerLink="/doctor">{{ speciality.doctorAlias }}</h2>
+                <h2
+                    [routerLink]="[
+                        '/especialidades',
+                        speciality.slug,
+                        speciality.doctorAlias
+                    ]"
+                >
+                    {{ speciality.doctorAlias }}
+                </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aliquid amet debitis dolor dolorem dolorum eligendi ipsam
@@ -45,14 +75,29 @@
         </div>
 
         <div class="doctor">
-            <div class="doctor__image" routerLink="/doctor">
+            <div
+                class="doctor__image"
+                [routerLink]="[
+                    '/especialidades',
+                    speciality.slug,
+                    speciality.doctorAlias
+                ]"
+            >
                 <img
                     src="../../../assets/images/doctor-3.jpg"
                     alt="Doctor image"
                 />
             </div>
             <div class="doctor__information">
-                <h2 routerLink="/doctor">{{ speciality.doctorAlias }}</h2>
+                <h2
+                    [routerLink]="[
+                        '/especialidades',
+                        speciality.slug,
+                        speciality.doctorAlias
+                    ]"
+                >
+                    {{ speciality.doctorAlias }}
+                </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aliquid amet debitis dolor dolorem dolorum eligendi ipsam
