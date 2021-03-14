@@ -1,24 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SpecialityService } from './speciality.service';
+import { Speciality } from './speciality';
+
 @Component({
   selector: 'app-specialties',
   templateUrl: './specialties.component.html',
   styleUrls: ['./specialties.component.scss'],
 })
 export class SpecialtiesComponent implements OnInit {
-  specialities = [
-    'Cardiología',
-    'Dermatología',
-    'Endocrinología',
-    'Gastroenterología',
-    'Ginecología',
-    'Odontología',
-    'Otorrinolaringología',
-    'Pediatría',
-    'Proctología',
-  ];
+  specialities: Speciality[];
+  constructor(private specialityService: SpecialityService) {}
 
-  constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    this.specialities = this.specialityService.getSpecialities();
+  }
 }

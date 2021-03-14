@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { MedicineComponent } from './components/medicine/medicine.component';
 import { LaboratoryComponent } from './components/laboratory/laboratory.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
+import { SpecialityService } from './components/specialties/speciality.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
     DoctorsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [SpecialityService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -10,9 +10,9 @@
     <div class="specialities">
         <div class="specialities__item" *ngFor="let speciality of specialities">
             <i class="fas fa-dna"></i>
-            <p>{{ speciality }}</p>
+            <p>{{ speciality.name }}</p>
             <i
-                routerLink="/doctores"
+                [routerLink]="['/especialidades', speciality.slug]"
                 routerLinkActive="active"
                 class="fas fa-arrow-right"
             ></i>

@@ -21,7 +21,8 @@ const routes: Routes = [
   { path: 'nosotros', component: AboutComponent },
   { path: 'medicina', component: MedicineComponent },
   { path: 'laboratorio', component: LaboratoryComponent },
-  { path: 'doctores', component: DoctorsComponent },
+  { path: 'especialidades/:slug', component: DoctorsComponent },
+
   { path: '**', redirectTo: '' },
 ];
 
