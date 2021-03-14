@@ -12,7 +12,7 @@
             <i class="fas fa-dna"></i>
             <p>{{ speciality.name }}</p>
             <i
-                [routerLink]="['/especialidades', speciality.slug]"
+                [routerLink]="['/especialidades', speciality.getSpecialitySlug()]"
                 routerLinkActive="active"
                 class="fas fa-arrow-right"
             ></i>

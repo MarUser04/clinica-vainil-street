@@ -6,35 +6,31 @@ export class SpecialityService {
     let specialities: Speciality[];
 
     specialities = [
-      new Speciality('cardiologia', 'Cardiología', 'Cardiólogos', 'Cardiólogo'),
+      new Speciality('Cardiología', 'Cardiólogos', 'Cardiólogo'),
       new Speciality(
-        'dermatologia',
         'Dermatología',
         'Dermatólogos',
         'Dermatólogo',
       ),
       new Speciality(
-        'endocrinologia',
         'Endocrinología',
         'Endocrinólogos',
         'Endocrinólogo',
       ),
       new Speciality(
-        'gastroenterologia',
         'Gastroenterología',
         'Gastroenterólogos',
         'Gastroenterólogo',
       ),
-      new Speciality('ginecologia', 'Ginecología', 'Ginecólogos', 'Ginecólogo'),
-      new Speciality('odontologia', 'Odontología', 'Odontólogos', 'Odontólogo'),
+      new Speciality( 'Ginecología', 'Ginecólogos', 'Ginecólogo'),
+      new Speciality( 'Odontología', 'Odontólogos', 'Odontólogo'),
       new Speciality(
-        'otorrinolaringologia',
         'Otorrinolaringología',
         'Otorrinolaringólogos',
         'Otorrinolaringólogo',
       ),
-      new Speciality('pediatria', 'Pediatría', 'Pediatras', 'Pediatra'),
-      new Speciality('proctologia', 'Proctología', 'Proctólogos', 'Proctólogo'),
+      new Speciality('Pediatría', 'Pediatras', 'Pediatra'),
+      new Speciality( 'Proctología', 'Proctólogos', 'Proctólogo'),
     ];
 
     return specialities;
@@ -42,6 +38,12 @@ export class SpecialityService {
 
   public getSpeciality(slug) {
     let specialities: Speciality[] = this.getSpecialities();
-    return specialities.find((s) => s.slug == slug);
+    return specialities.find((s) => s.getSpecialitySlug() == slug);
+  }
+
+  public getDoctorAliasBySlug(slug) {
+    let specialities: Speciality[] = this.getSpecialities();
+    let speciality = specialities.find((s) => s.getDoctorAliasSlug() == slug);
+    return speciality.doctorAlias ? speciality.doctorAlias : '';
   }
 }

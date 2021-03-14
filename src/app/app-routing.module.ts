@@ -14,14 +14,14 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'especialidades', component: SpecialtiesComponent },
-  { path: 'especialidades/:slug/:doctorAliasSlug', component: DoctorViewComponent },
+  { path: 'especialidades/:specialitySlug/:doctorAliasSlug', component: DoctorViewComponent },
   { path: 'unete', component: JoinUsComponent },
   { path: 'pasantias', component: InternshipComponent },
   { path: 'farmacia', component: PharmacyComponent },
   { path: 'nosotros', component: AboutComponent },
   { path: 'medicina', component: MedicineComponent },
   { path: 'laboratorio', component: LaboratoryComponent },
-  { path: 'especialidades/:slug', component: DoctorsComponent },
+  { path: 'especialidades/:specialitySlug', component: DoctorsComponent },
 
   { path: '**', redirectTo: '' },
 ];
