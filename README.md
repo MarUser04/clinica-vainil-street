@@ -9,4 +9,5 @@ Los integrantes del grupo somos:
 * 26065894 Fuentes Fuentes, Ivan Alexander - ivalex.97.01@gmail.com
 * 25703600 Gómez Szoke, Juan Manuel - juangszoke@gmail.com
 * 26492024 Useche Rivera, Marco José - usechermarcoj@gmail.com
+* peluca alejandro jose
 
